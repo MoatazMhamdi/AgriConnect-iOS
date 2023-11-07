@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4AF15F82AFA9045005165F9 /* AgriConnect_userApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AF15F72AFA9045005165F9 /* AgriConnect_userApp.swift */; };
+		C4AF15FA2AFA9045005165F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AF15F92AFA9045005165F9 /* ContentView.swift */; };
+		C4AF15FC2AFA9045005165F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4AF15FB2AFA9045005165F9 /* Assets.xcassets */; };
+		C4AF15FF2AFA9045005165F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4AF15FE2AFA9045005165F9 /* Preview Assets.xcassets */; };
+		C4AF16012AFA9045005165F9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AF16002AFA9045005165F9 /* Persistence.swift */; };
+		C4AF16042AFA9045005165F9 /* AgriConnect_user.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4AF16022AFA9045005165F9 /* AgriConnect_user.xcdatamodeld */; };
+		C4AF160E2AFA9046005165F9 /* AgriConnect_userTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AF160D2AFA9046005165F9 /* AgriConnect_userTests.swift */; };
+		C4AF16182AFA9046005165F9 /* AgriConnect_userUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AF16172AFA9046005165F9 /* AgriConnect_userUITests.swift */; };
+		C4AF161A2AFA9046005165F9 /* AgriConnect_userUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AF16192AFA9046005165F9 /* AgriConnect_userUITestsLaunchTests.swift */; };
+		C4AF16272AFAA8BF005165F9 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AF16262AFAA8BF005165F9 /* SignUp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4AF160A2AFA9046005165F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4AF15EC2AFA9044005165F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4AF15F32AFA9045005165F9;
+			remoteInfo = AgriConnect_user;
+		};
+		C4AF16142AFA9046005165F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4AF15EC2AFA9044005165F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4AF15F32AFA9045005165F9;
+			remoteInfo = AgriConnect_user;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C4AF15F42AFA9045005165F9 /* AgriConnect_user.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgriConnect_user.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4AF15F72AFA9045005165F9 /* AgriConnect_userApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgriConnect_userApp.swift; sourceTree = "<group>"; };
+		C4AF15F92AFA9045005165F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C4AF15FB2AFA9045005165F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4AF15FE2AFA9045005165F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4AF16002AFA9045005165F9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		C4AF16032AFA9045005165F9 /* AgriConnect_user.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AgriConnect_user.xcdatamodel; sourceTree = "<group>"; };
+		C4AF16092AFA9046005165F9 /* AgriConnect_userTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgriConnect_userTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4AF160D2AFA9046005165F9 /* AgriConnect_userTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgriConnect_userTests.swift; sourceTree = "<group>"; };
+		C4AF16132AFA9046005165F9 /* AgriConnect_userUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgriConnect_userUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4AF16172AFA9046005165F9 /* AgriConnect_userUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgriConnect_userUITests.swift; sourceTree = "<group>"; };
+		C4AF16192AFA9046005165F9 /* AgriConnect_userUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgriConnect_userUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C4AF16262AFAA8BF005165F9 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4AF15F12AFA9045005165F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4AF16062AFA9046005165F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4AF16102AFA9046005165F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4AF15EB2AFA9044005165F9 = {
+			isa = PBXGroup;
+			children = (
+				C4AF15F62AFA9045005165F9 /* AgriConnect_user */,
+				C4AF160C2AFA9046005165F9 /* AgriConnect_userTests */,
+				C4AF16162AFA9046005165F9 /* AgriConnect_userUITests */,
+				C4AF15F52AFA9045005165F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4AF15F52AFA9045005165F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4AF15F42AFA9045005165F9 /* AgriConnect_user.app */,
+				C4AF16092AFA9046005165F9 /* AgriConnect_userTests.xctest */,
+				C4AF16132AFA9046005165F9 /* AgriConnect_userUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4AF15F62AFA9045005165F9 /* AgriConnect_user */ = {
+			isa = PBXGroup;
+			children = (
+				C4AF15F72AFA9045005165F9 /* AgriConnect_userApp.swift */,
+				C4AF15F92AFA9045005165F9 /* ContentView.swift */,
+				C4AF16262AFAA8BF005165F9 /* SignUp.swift */,
+				C4AF15FB2AFA9045005165F9 /* Assets.xcassets */,
+				C4AF16002AFA9045005165F9 /* Persistence.swift */,
+				C4AF16022AFA9045005165F9 /* AgriConnect_user.xcdatamodeld */,
+				C4AF15FD2AFA9045005165F9 /* Preview Content */,
+			);
+			path = AgriConnect_user;
+			sourceTree = "<group>";
+		};
+		C4AF15FD2AFA9045005165F9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C4AF15FE2AFA9045005165F9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4AF160C2AFA9046005165F9 /* AgriConnect_userTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4AF160D2AFA9046005165F9 /* AgriConnect_userTests.swift */,
+			);
+			path = AgriConnect_userTests;
+			sourceTree = "<group>";
+		};
+		C4AF16162AFA9046005165F9 /* AgriConnect_userUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4AF16172AFA9046005165F9 /* AgriConnect_userUITests.swift */,
+				C4AF16192AFA9046005165F9 /* AgriConnect_userUITestsLaunchTests.swift */,
+			);
+			path = AgriConnect_userUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4AF15F32AFA9045005165F9 /* AgriConnect_user */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4AF161D2AFA9046005165F9 /* Build configuration list for PBXNativeTarget "AgriConnect_user" */;
+			buildPhases = (
+				C4AF15F02AFA9045005165F9 /* Sources */,
+				C4AF15F12AFA9045005165F9 /* Frameworks */,
+				C4AF15F22AFA9045005165F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgriConnect_user;
+			productName = AgriConnect_user;
+			productReference = C4AF15F42AFA9045005165F9 /* AgriConnect_user.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4AF16082AFA9046005165F9 /* AgriConnect_userTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4AF16202AFA9046005165F9 /* Build configuration list for PBXNativeTarget "AgriConnect_userTests" */;
+			buildPhases = (
+				C4AF16052AFA9046005165F9 /* Sources */,
+				C4AF16062AFA9046005165F9 /* Frameworks */,
+				C4AF16072AFA9046005165F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4AF160B2AFA9046005165F9 /* PBXTargetDependency */,
+			);
+			name = AgriConnect_userTests;
+			productName = AgriConnect_userTests;
+			productReference = C4AF16092AFA9046005165F9 /* AgriConnect_userTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4AF16122AFA9046005165F9 /* AgriConnect_userUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4AF16232AFA9046005165F9 /* Build configuration list for PBXNativeTarget "AgriConnect_userUITests" */;
+			buildPhases = (
+				C4AF160F2AFA9046005165F9 /* Sources */,
+				C4AF16102AFA9046005165F9 /* Frameworks */,
+				C4AF16112AFA9046005165F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4AF16152AFA9046005165F9 /* PBXTargetDependency */,
+			);
+			name = AgriConnect_userUITests;
+			productName = AgriConnect_userUITests;
+			productReference = C4AF16132AFA9046005165F9 /* AgriConnect_userUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4AF15EC2AFA9044005165F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					C4AF15F32AFA9045005165F9 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					C4AF16082AFA9046005165F9 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = C4AF15F32AFA9045005165F9;
+					};
+					C4AF16122AFA9046005165F9 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = C4AF15F32AFA9045005165F9;
+					};
+				};
+			};
+			buildConfigurationList = C4AF15EF2AFA9044005165F9 /* Build configuration list for PBXProject "AgriConnect_user" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4AF15EB2AFA9044005165F9;
+			productRefGroup = C4AF15F52AFA9045005165F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4AF15F32AFA9045005165F9 /* AgriConnect_user */,
+				C4AF16082AFA9046005165F9 /* AgriConnect_userTests */,
+				C4AF16122AFA9046005165F9 /* AgriConnect_userUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4AF15F22AFA9045005165F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4AF15FF2AFA9045005165F9 /* Preview Assets.xcassets in Resources */,
+				C4AF15FC2AFA9045005165F9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4AF16072AFA9046005165F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4AF16112AFA9046005165F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4AF15F02AFA9045005165F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4AF16042AFA9045005165F9 /* AgriConnect_user.xcdatamodeld in Sources */,
+				C4AF16012AFA9045005165F9 /* Persistence.swift in Sources */,
+				C4AF15FA2AFA9045005165F9 /* ContentView.swift in Sources */,
+				C4AF15F82AFA9045005165F9 /* AgriConnect_userApp.swift in Sources */,
+				C4AF16272AFAA8BF005165F9 /* SignUp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4AF16052AFA9046005165F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4AF160E2AFA9046005165F9 /* AgriConnect_userTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4AF160F2AFA9046005165F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4AF16182AFA9046005165F9 /* AgriConnect_userUITests.swift in Sources */,
+				C4AF161A2AFA9046005165F9 /* AgriConnect_userUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4AF160B2AFA9046005165F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4AF15F32AFA9045005165F9 /* AgriConnect_user */;
+			targetProxy = C4AF160A2AFA9046005165F9 /* PBXContainerItemProxy */;
+		};
+		C4AF16152AFA9046005165F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4AF15F32AFA9045005165F9 /* AgriConnect_user */;
+			targetProxy = C4AF16142AFA9046005165F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C4AF161B2AFA9046005165F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4AF161C2AFA9046005165F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4AF161E2AFA9046005165F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AgriConnect_user/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tn.esprit.agriconnect-user.AgriConnect-user";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4AF161F2AFA9046005165F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AgriConnect_user/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tn.esprit.agriconnect-user.AgriConnect-user";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C4AF16212AFA9046005165F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tn.esprit.agriconnect-user.AgriConnect-userTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgriConnect_user.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AgriConnect_user";
+			};
+			name = Debug;
+		};
+		C4AF16222AFA9046005165F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tn.esprit.agriconnect-user.AgriConnect-userTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgriConnect_user.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AgriConnect_user";
+			};
+			name = Release;
+		};
+		C4AF16242AFA9046005165F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tn.esprit.agriconnect-user.AgriConnect-userUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AgriConnect_user;
+			};
+			name = Debug;
+		};
+		C4AF16252AFA9046005165F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tn.esprit.agriconnect-user.AgriConnect-userUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AgriConnect_user;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4AF15EF2AFA9044005165F9 /* Build configuration list for PBXProject "AgriConnect_user" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4AF161B2AFA9046005165F9 /* Debug */,
+				C4AF161C2AFA9046005165F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4AF161D2AFA9046005165F9 /* Build configuration list for PBXNativeTarget "AgriConnect_user" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4AF161E2AFA9046005165F9 /* Debug */,
+				C4AF161F2AFA9046005165F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4AF16202AFA9046005165F9 /* Build configuration list for PBXNativeTarget "AgriConnect_userTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4AF16212AFA9046005165F9 /* Debug */,
+				C4AF16222AFA9046005165F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4AF16232AFA9046005165F9 /* Build configuration list for PBXNativeTarget "AgriConnect_userUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4AF16242AFA9046005165F9 /* Debug */,
+				C4AF16252AFA9046005165F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C4AF16022AFA9045005165F9 /* AgriConnect_user.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4AF16032AFA9045005165F9 /* AgriConnect_user.xcdatamodel */,
+			);
+			currentVersion = C4AF16032AFA9045005165F9 /* AgriConnect_user.xcdatamodel */;
+			path = AgriConnect_user.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C4AF15EC2AFA9044005165F9 /* Project object */;
+}
