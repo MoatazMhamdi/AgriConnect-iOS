@@ -16,53 +16,57 @@ struct SignUp: View {
     var body: some View {
         
         VStack{
-            Image("forgetpass")
-                .resizable()
-                .scaledToFit()
+            Text("SignUP")
+                .font(.title)
+                .fontWeight(.black)
+                .padding(10)
+            
+            Text("Please enter you personal informations")
+                .fontWeight(.medium)
+                .padding(10)
             
             TextField("User Name", text: $username )
-                .padding()
                 .font(.title3)
-                .frame(width: 300, height: 50)
+                .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                .frame(width: 343, height: 51)
                 .background(Color.black.opacity(0.05))
                 .cornerRadius(10)
-                .padding(-5)
+                .padding(10)
             
             TextField("Email", text: $email )
-                .padding()
                 .font(.title3)
-                .frame(width: 300, height: 50)
+                .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                .frame(width: 343, height: 51)
                 .background(Color.black.opacity(0.05))
                 .cornerRadius(10)
                 .padding(10)
             
             TextField("Password", text: $password )
-                .padding()
                 .font(.title3)
-                .frame(width: 300, height: 50)
+                .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                .frame(width: 343, height: 51)
                 .background(Color.black.opacity(0.05))
                 .cornerRadius(10)
-                .padding(-5)
+                .padding(15)
             
             
             SecureField("Confirm Password", text: $confirmpassword)
-                .padding()
                 .font(.title3)
-                .frame(width: 300, height: 50)
+                .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                .frame(width: 343, height: 51)
                 .background(Color.black.opacity(0.05))
                 .cornerRadius(10)
                 .padding(10)
             
             
-            Button("login"){}
-                .font(.callout)
-                .fontWeight(.heavy)
-                .padding(.vertical, 5)
-                .padding(.horizontal, 10)
-                .toolbar(.hidden, for: .navigationBar)
-                .background(Color.gray)
-                .cornerRadius(10)
-                .padding(-5)
+            Text("Registre")
+      
+        .font(Font.custom("Inter", size: 20).weight(.black))
+        .foregroundColor(.white)
+        .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+        .frame(width: 343, height: 51)
+        .background(Color(red: 0.37, green: 0.69, blue: 0.46))
+        .cornerRadius(12)
 
             
             

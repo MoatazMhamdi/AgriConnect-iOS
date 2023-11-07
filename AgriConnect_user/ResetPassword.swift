@@ -1,18 +1,17 @@
 //
-//  ContentView.swift
+//  ForgetPassword.swift
 //  AgriConnect_user
 //
 //  Created by MoatazMhamdi on 7/11/2023.
 //
 
 import SwiftUI
-import CoreData
 
-struct ContentView: View {
-    @State private var email = ""
+struct ResetPassword: View {
+    
     @State private var password = ""
 
-    @State private var wrongpassword = ""
+  
     @State private var navigateToLocation = false
 
     var body: some View{
@@ -26,25 +25,17 @@ struct ContentView: View {
                 // Your view content goes here
                 
                 VStack {
-                    Image("login")
+                    Image("otfverif")
                         .resizable()
                         .scaledToFit()
+                        .padding(-60)
                     
-                    Text("LOGIN")
+                    Text("Reset Password")
                         .font(.title)
                         .fontWeight(.bold)
-                        .padding(10)
-                    
-                    Text("Please enter you data to connect")
-                    
-                    TextField("Email", text: $email)
                         
-                        .font(.title3)
-                        .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
-                        .frame(width: 343, height: 51)
-                        .background(Color.black.opacity(0.05))
-                        .cornerRadius(12)
-                        .padding(10)
+                    
+                    Text("Congrats! Now you can change your password.")
                     
                     SecureField("Password", text: $password)
                         
@@ -54,18 +45,19 @@ struct ContentView: View {
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
                         .padding(10)
-                    
-                    NavigationLink(destination: ForgetPassword()) {
-                        Text("Forgot password?")
-                    }
-                      .font(Font.custom("Inter", size: 16).weight(.semibold))
-                      .foregroundColor(Color(red: 0.37, green: 0.69, blue: 0.46))
-                      .padding(EdgeInsets(top: 5, leading: 55, bottom: 5, trailing: -150))
-                    
+                    SecureField("Confirm Password", text: $password)
+                        
+                        .font(.title3)
+                        .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                        .frame(width: 343, height: 51)
+                        .background(Color.black.opacity(0.05))
+                        .cornerRadius(10)
+                        .padding(10)
+                   
                   
                     
-                    NavigationLink(destination: SignUp()) {
-                        Text("Login")
+                    NavigationLink(destination: OTF_Verification()) {
+                        Text("Send")
                     }
                     .font(Font.custom("Inter", size: 20).weight(.bold))
                     .foregroundColor(.white)
@@ -73,18 +65,6 @@ struct ContentView: View {
                     .frame(width: 343, height: 51)
                     .background(Color(red: 0.37, green: 0.69, blue: 0.46))
                     .cornerRadius(12)
-                    
-                    NavigationLink(destination: SignUp()) {
-                        Text("Create you personal account!")
-                    }
-                      .font(Font.custom("Inter", size: 20).weight(.black))
-                      .foregroundColor(Color.blue)
-                      .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 30))
-                    
-                    
-                    
-                    
-                   
                   
                 }
             
@@ -97,9 +77,9 @@ struct ContentView: View {
         
      
     }
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-        }
-    }
 
+struct ResetPassword_Previews: PreviewProvider {
+    static var previews: some View {
+        ResetPassword()
+    }
+}
