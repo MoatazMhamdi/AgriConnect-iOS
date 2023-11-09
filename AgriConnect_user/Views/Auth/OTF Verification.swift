@@ -67,12 +67,13 @@ struct OTF_Verification: View {
                 .background(Color(red: 0.37, green: 0.69, blue: 0.46))
                 .cornerRadius(12)
                 .padding(10)
+              
                 
             }
             
             
             
-        }
+        }.navigationBarBackButtonHidden(true)
         
         
     }

@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct ForgetPassword: View {
-    @State private var email = ""
+struct ResetPassword: View {
+    
     @State private var password = ""
 
-    @State private var wrongpassword = ""
+  
     @State private var navigateToLocation = false
 
     var body: some View{
@@ -25,30 +25,38 @@ struct ForgetPassword: View {
                 // Your view content goes here
                 
                 VStack {
-                    Image("forgetpass")
+                    Image("otfverif")
                         .resizable()
                         .scaledToFit()
+                        .padding(-60)
                     
-                    Text("Forget Password")
+                    Text("Reset Password")
                         .font(.title)
                         .fontWeight(.bold)
                         
                     
-                    Text("Don't Worry! It occurs. Please Enter your email")
+                    Text("Congrats! Now you can change your password.")
                     
-                    TextField("Email", text: $email)
+                    SecureField("Password", text: $password)
                         
                         .font(.title3)
                         .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
                         .frame(width: 343, height: 51)
                         .background(Color.black.opacity(0.05))
-                        .cornerRadius(12)
+                        .cornerRadius(10)
                         .padding(10)
-                    
+                    SecureField("Confirm Password", text: $password)
+                        
+                        .font(.title3)
+                        .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                        .frame(width: 343, height: 51)
+                        .background(Color.black.opacity(0.05))
+                        .cornerRadius(10)
+                        .padding(10)
                    
                   
                     
-                    NavigationLink(destination: OTF_Verification()) {
+                    NavigationLink(destination: Home()) {
                         Text("Send")
                     }
                     .font(Font.custom("Inter", size: 20).weight(.bold))
@@ -62,7 +70,7 @@ struct ForgetPassword: View {
             
               
                 
-            }
+            }.navigationBarBackButtonHidden(true)
         
         
         }
@@ -70,8 +78,8 @@ struct ForgetPassword: View {
      
     }
 
-struct ForgetPassword_Previews: PreviewProvider {
+struct ResetPassword_Previews: PreviewProvider {
     static var previews: some View {
-        ForgetPassword()
+        ResetPassword()
     }
 }

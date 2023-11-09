@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct ResetPassword: View {
-    
+struct ForgetPassword: View {
+    @State private var email = ""
     @State private var password = ""
 
-  
+    @State private var wrongpassword = ""
     @State private var navigateToLocation = false
 
     var body: some View{
@@ -25,34 +25,26 @@ struct ResetPassword: View {
                 // Your view content goes here
                 
                 VStack {
-                    Image("otfverif")
+                    Image("forgetpass")
                         .resizable()
                         .scaledToFit()
-                        .padding(-60)
                     
-                    Text("Reset Password")
+                    Text("Forget Password")
                         .font(.title)
                         .fontWeight(.bold)
                         
                     
-                    Text("Congrats! Now you can change your password.")
+                    Text("Don't Worry! It occurs. Please Enter your email")
                     
-                    SecureField("Password", text: $password)
+                    TextField("Email", text: $email)
                         
                         .font(.title3)
                         .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
                         .frame(width: 343, height: 51)
                         .background(Color.black.opacity(0.05))
-                        .cornerRadius(10)
+                        .cornerRadius(12)
                         .padding(10)
-                    SecureField("Confirm Password", text: $password)
-                        
-                        .font(.title3)
-                        .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
-                        .frame(width: 343, height: 51)
-                        .background(Color.black.opacity(0.05))
-                        .cornerRadius(10)
-                        .padding(10)
+                    
                    
                   
                     
@@ -73,13 +65,13 @@ struct ResetPassword: View {
             }
         
         
-        }
+    }
         
      
     }
 
-struct ResetPassword_Previews: PreviewProvider {
+struct ForgetPassword_Previews: PreviewProvider {
     static var previews: some View {
-        ResetPassword()
+        ForgetPassword()
     }
 }
