@@ -1,39 +1,22 @@
-//
-//  OTF Verification.swift
-//  AgriConnect_user
-//
-//  Created by MoatazMhamdi on 7/11/2023.
-//
-
 import SwiftUI
 
 struct OTP_Verification: View {
     @State private var otp = ""
     @State private var navigateToLocation = false
     
-    var body: some View{
-        
-        
+    var body: some View {
         NavigationView {
-            
-            
-            
-            
-            // Your view content goes here
-            
             VStack {
                 Image("otfverif")
                     .resizable()
                     .scaledToFit()
                     .padding(-60)
                 
-                Text("OTF Verfication")
+                Text("OTP Verification")
                     .font(.title)
                     .fontWeight(.bold)
                 
-                
                 Text("Enter your verification code.")
-                
                 
                 HStack(spacing: 16) {
                     ForEach(0..<4) { index in
@@ -54,9 +37,6 @@ struct OTP_Verification: View {
                 }
                 .padding(10)
                 
-                
-                
-                
                 NavigationLink(destination: ResetPassword()) {
                     Text("Send")
                 }
@@ -67,15 +47,9 @@ struct OTP_Verification: View {
                 .background(Color(red: 0.37, green: 0.69, blue: 0.46))
                 .cornerRadius(12)
                 .padding(10)
-              
-                
             }
-            
-            
-            
-        }.navigationBarBackButtonHidden(true)
-        
-        
+        }
+        .navigationBarBackButtonHidden(true)
     }
     
     private func getDigit(at index: Int) -> String {
@@ -86,11 +60,10 @@ struct OTP_Verification: View {
             return ""
         }
     }
-    
-    
-    struct OTP_Verification_Previews: PreviewProvider {
-        static var previews: some View {
-            OTP_Verification()
-        }
+}
+
+struct OTP_Verification_Previews: PreviewProvider {
+    static var previews: some View {
+        OTP_Verification()
     }
 }
