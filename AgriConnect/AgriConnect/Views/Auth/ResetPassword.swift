@@ -10,6 +10,11 @@ import SwiftUI
 struct ResetPassword: View {
     
     @State private var password = ""
+    @State private var Confirmpassword = ""
+
+    @State private var isPasswordVisible = false
+    @State private var isConfirmPasswordVisible = false
+
 
   
     @State private var navigateToLocation = false
@@ -37,23 +42,73 @@ struct ResetPassword: View {
                     
                     Text("Congrats! Now you can change your password.")
                     
-                    SecureField("Password", text: $password)
-                        
-                        .font(.title3)
-                        .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
-                        .frame(width: 343, height: 51)
-                        .background(Color.black.opacity(0.05))
-                        .cornerRadius(10)
-                        .padding(10)
-                    SecureField("Confirm Password", text: $password)
-                        
-                        .font(.title3)
-                        .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
-                        .frame(width: 343, height: 51)
-                        .background(Color.black.opacity(0.05))
-                        .cornerRadius(10)
-                        .padding(10)
-                   
+                    ZStack(alignment: .leading) {
+                        if password.isEmpty {
+                            Text("Password")
+                                .foregroundColor(.gray)
+                                .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                        }
+                        HStack {
+                            Image(systemName: "lock")
+                                .foregroundColor(.gray)
+                                .padding(.leading, 8)
+                            if isPasswordVisible {
+                                TextField("", text: $password)
+                                    .font(.title3)
+                                    .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                            } else {
+                                SecureField("", text: $password)
+                                    .font(.title3)
+                                    .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                            }
+                            Button(action: {
+                                isPasswordVisible.toggle()
+                            }) {
+                                Image(systemName: isPasswordVisible ? "eye.slash.fill" : "eye.fill")
+                                    .foregroundColor(.gray)
+                            }
+                            .padding(.trailing, 8)
+                        }
+                    }
+                    .frame(width: 343, height: 51)
+                    .background(Color.black.opacity(0.05))
+                    .cornerRadius(10)
+                    .padding(10)
+                    
+                    
+                    
+                    ZStack(alignment: .leading) {
+                        if Confirmpassword.isEmpty {
+                            Text("Confirm Password")
+                                .foregroundColor(.gray)
+                                .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                        }
+                        HStack {
+                            Image(systemName: "lock")
+                                .foregroundColor(.gray)
+                                .padding(.leading, 8)
+                            if isConfirmPasswordVisible {
+                                TextField("", text: $Confirmpassword)
+                                    .font(.title3)
+                                    .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                            } else {
+                                SecureField("", text: $Confirmpassword)
+                                    .font(.title3)
+                                    .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                            }
+                            Button(action: {
+                                isConfirmPasswordVisible.toggle()
+                            }) {
+                                Image(systemName: isConfirmPasswordVisible ? "eye.slash.fill" : "eye.fill")
+                                    .foregroundColor(.gray)
+                            }
+                            .padding(.trailing, 8)
+                        }
+                    }
+                    .frame(width: 343, height: 51)
+                    .background(Color.black.opacity(0.05))
+                    .cornerRadius(10)
+                    .padding(10)
                   
                     
                     NavigationLink(destination: Home()) {

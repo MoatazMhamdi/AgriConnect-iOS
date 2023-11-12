@@ -2,62 +2,66 @@ import SwiftUI
 
 struct OTP_Verification: View {
     @State private var otp = ""
-    @State private var navigateToLocation = false
     
     var body: some View {
-        NavigationView {
-            VStack {
-                Image("otfverif")
-                    .resizable()
-                    .scaledToFit()
-                    .padding(-60)
-                
-                Text("OTP Verification")
+        VStack {
+            Image("otfverif")
+                .resizable()
+                .scaledToFit()
+                .padding(-60)
+            
+            Text("OTP Verification")
+                .font(.title)
+                .fontWeight(.bold)
+            
+            Text("Enter your verification code.")
+            
+            HStack(spacing: 16) {
+                ForEach(0..<4) { index in
+                    let digit = otp.count > index ? String(otp[otp.index(otp.startIndex, offsetBy: index)]) : ""
+                    
+                    TextField("", text: Binding(
+                        get: { digit },
+                        set: { newValue in
+                            if newValue.count > 1 {
+                                let endIndex = otp.index(otp.startIndex, offsetBy: index)
+                                otp.replaceSubrange(otp.startIndex...endIndex, with: newValue)
+                            } else if newValue.isEmpty {
+                                let endIndex = otp.index(otp.startIndex, offsetBy: index)
+                                otp.remove(at: endIndex)
+                            } else if otp.count > index {
+                                let index = otp.index(otp.startIndex, offsetBy: index)
+                                otp.replaceSubrange(index...index, with: newValue)
+                            } else {
+                                otp.append(newValue)
+                            }
+                        }
+                    ))
+                    .frame(width: 50, height: 50)
                     .font(.title)
-                    .fontWeight(.bold)
-                
-                Text("Enter your verification code.")
-                
-                HStack(spacing: 16) {
-                    ForEach(0..<4) { index in
-                        Rectangle()
-                            .frame(width: 50, height: 50)
-                            .overlay(
-                                Text(getDigit(at: index))
-                                    .font(.title)
-                                    .foregroundColor(.black)
-                            )
-                            .foregroundColor(Color(red: 1, green: 1, blue: 1))
-                            .cornerRadius(0)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color.green, lineWidth: 1)
-                            )
-                    }
+                    .foregroundColor(.black)
+                    .multilineTextAlignment(.center)
+                    .keyboardType(.numberPad)
+                    .background(Color.white)
+                    .cornerRadius(25)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 25)
+                            .stroke(Color.green, lineWidth: 1)
+                    )
                 }
-                .padding(10)
-                
-                NavigationLink(destination: ResetPassword()) {
-                    Text("Send")
-                }
-                .font(Font.custom("Inter", size: 20).weight(.bold))
-                .foregroundColor(.white)
-                .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
-                .frame(width: 343, height: 51)
-                .background(Color(red: 0.37, green: 0.69, blue: 0.46))
-                .cornerRadius(12)
-                .padding(10)
             }
-        }
-        .navigationBarBackButtonHidden(true)
-    }
-    
-    private func getDigit(at index: Int) -> String {
-        let otpDigits = Array(otp)
-        if index < otpDigits.count {
-            return String(otpDigits[index])
-        } else {
-            return ""
+            .padding(10)
+            
+            Button(action: {
+                // Perform verification action
+            }) {
+                Text("Verify")
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(12)
+            }
         }
     }
 }

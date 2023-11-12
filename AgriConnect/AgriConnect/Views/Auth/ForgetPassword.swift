@@ -36,14 +36,25 @@ struct ForgetPassword: View {
                     
                     Text("Don't Worry! It occurs. Please Enter your email")
                     
-                    TextField("Email", text: $email)
-                        
-                        .font(.title3)
-                        .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
-                        .frame(width: 343, height: 51)
-                        .background(Color.black.opacity(0.05))
-                        .cornerRadius(12)
-                        .padding(10)
+                    ZStack(alignment: .leading) {
+                        if email.isEmpty {
+                            Text("Email")
+                                .foregroundColor(.gray)
+                                .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                        }
+                        HStack {
+                            Image(systemName: "envelope")
+                                .foregroundColor(.gray)
+                                .padding(.leading, 8)
+                            TextField("", text: $email)
+                                .font(.title3)
+                                .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                        }
+                    }
+                    .frame(width: 343, height: 51)
+                    .background(Color.black.opacity(0.05))
+                    .cornerRadius(12)
+                    .padding(10)
                     
                    
                   
