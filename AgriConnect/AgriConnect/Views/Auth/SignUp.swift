@@ -138,13 +138,13 @@ struct SignUp: View {
                     .cornerRadius(12)
             }
             
-            Spacer()
+      
             
             VStack(spacing: 20) {
                 Text("or Sign In with")
                     .foregroundColor(.gray)
                 
-                HStack {
+                VStack {
                     Button(action: {
                         // Redirect to Google Sign In
                         if let url = URL(string: "https://accounts.google.com/ServiceLogin") {
@@ -156,7 +156,7 @@ struct SignUp: View {
                             .bold()
                             .frame(maxWidth: .infinity)
                             .padding()
-                            .background(Color.green)
+                            .background(Color(red: 0.37, green: 0.69, blue: 0.46))
                             .cornerRadius(10)
                     }
                     
@@ -171,7 +171,7 @@ struct SignUp: View {
                             .bold()
                             .frame(maxWidth: .infinity)
                             .padding()
-                            .background(Color.green)
+                            .background(Color(red: 0.37, green: 0.69, blue: 0.46))
                             .cornerRadius(10)
                     }
                 }

@@ -22,6 +22,7 @@
 		C4DD6B0B2AFD7DA300EA4604 /* OTP Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6B0A2AFD7DA300EA4604 /* OTP Verification.swift */; };
 		C4DD6B122AFD7FA100EA4604 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6B112AFD7FA100EA4604 /* FavoriteView.swift */; };
 		C4DD6B162AFD81E300EA4604 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6B152AFD81E300EA4604 /* Home.swift */; };
+		C4EA1A3F2B013CE0006AC54C /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EA1A3E2B013CE0006AC54C /* EditProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		C4DD6B0A2AFD7DA300EA4604 /* OTP Verification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OTP Verification.swift"; sourceTree = "<group>"; };
 		C4DD6B112AFD7FA100EA4604 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		C4DD6B152AFD81E300EA4604 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C4EA1A3E2B013CE0006AC54C /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				C4DD6B152AFD81E300EA4604 /* Home.swift */,
+				C4EA1A3E2B013CE0006AC54C /* EditProfile.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			files = (
 				C4DD6B022AFD794600EA4604 /* SignUp.swift in Sources */,
 				C4DD6B0B2AFD7DA300EA4604 /* OTP Verification.swift in Sources */,
+				C4EA1A3F2B013CE0006AC54C /* EditProfile.swift in Sources */,
 				C4DD6B162AFD81E300EA4604 /* Home.swift in Sources */,
 				C4DD6AD22AFD77D400EA4604 /* Persistence.swift in Sources */,
 				C4DD6AD52AFD77D400EA4604 /* AgriConnect.xcdatamodeld in Sources */,

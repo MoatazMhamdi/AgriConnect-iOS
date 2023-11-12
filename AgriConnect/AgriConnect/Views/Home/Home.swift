@@ -16,18 +16,18 @@ struct Home: View {
                     ZStack {
                         Ellipse()
                             .foregroundColor(.white)
-                            .frame(width: 158, height: 158)
+                            .frame(width: 90, height: 80)
                             .overlay(Ellipse()
                                 .inset(by: 2)
                                 .stroke(.green, lineWidth: 3))
                             .shadow(color: Color(red: 0.40, green: 0.40, blue: 0.40, opacity: 0.15), radius: 20, y: 4)
-                            .position(x: 379, y: 150)
+                            .position(x: 379, y: 120)
                         
                         Image("homme")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 180, height: 180)
-                            .position(x: 379, y: 150)
+                            .frame(width: 100, height: 180)
+                            .position(x: 379, y: 120)
                     }
                     .padding(.bottom, 160)
                     
@@ -54,18 +54,18 @@ struct Home: View {
                         .font(.system(size: 30))
                         .fontWeight(.bold)
                         .foregroundColor(.black)
-                        .offset(x: -10, y: -140)
+                        .offset(x: -10, y: -200)
                     
                     Text("Moataz.Mhamdi@gmail.com")
                         .font(.system(size: 25))
                         .fontWeight(.light)
                         .foregroundColor(.blue)
-                        .offset(x: -10, y: -140)
+                        .offset(x: -10, y: -200)
                     
                     Image(systemName: "checkmark.seal.fill")
                         .font(.system(size: 25))
                         .foregroundColor(Color(.blue))
-                        .offset(x: 65, y: -201)
+                        .offset(x: 65, y: -260)
                     
                     Text("+20")
                         .font(.title)
