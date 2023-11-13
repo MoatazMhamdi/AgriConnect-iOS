@@ -3,12 +3,14 @@ import SwiftUI
 struct Home: View {
     
     var body: some View {
+        NavigationView{
         
         ZStack {
             Image("bg")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .edgesIgnoringSafeArea(.all)
+                .opacity(0.3)
             
             ScrollView {
                 VStack {
@@ -32,22 +34,13 @@ struct Home: View {
                     .padding(.bottom, 160)
                     
                     ZStack {
-                        NavigationLink(destination: ContentView()) {
-                            Text("Logout")
-                        }
-                        .font(Font.custom("Inter", size: 16).weight(.medium))
-                        .foregroundColor(.black)
-                        .offset(x: 144.50, y: -350)
+                       
                         
                         Text("Profile")
-                            .font(Font.custom("Inter", size: 30).weight(.semibold))
+                            .font(Font.custom("Inter", size: 27).weight(.semibold))
                             .foregroundColor(.black)
                             .offset(x: 1.50, y: -350)
-                        
-                        Text("Settings")
-                            .font(Font.custom("Inter", size: 16).weight(.medium))
-                            .foregroundColor(.black)
-                            .offset(x: -139.50, y: -350)
+                      
                     }
                     
                     Text("Moataz")
@@ -57,133 +50,202 @@ struct Home: View {
                         .offset(x: -10, y: -200)
                     
                     Text("Moataz.Mhamdi@gmail.com")
-                        .font(.system(size: 25))
+                        .font(.system(size: 15))
                         .fontWeight(.light)
                         .foregroundColor(.blue)
-                        .offset(x: -10, y: -200)
+                        .offset(x: -10, y: -205)
                     
                     Image(systemName: "checkmark.seal.fill")
-                        .font(.system(size: 25))
-                        .foregroundColor(Color(.blue))
-                        .offset(x: 65, y: -260)
+                        .font(.system(size: 20))
+                        .foregroundColor(Color(.green))
+                        .offset(x: 65, y: -245)
                     
                     Text("+20")
-                        .font(.title)
+                        
+                        .font(.system(size: 22))
+
                         .fontWeight(.bold)
                         .foregroundColor(.black)
-                        .offset(x: -70, y: -130)
+                        .offset(x: -70, y: -230)
                     
                     Text("+200DT")
-                        .font(.title)
+                        .font(.system(size: 20))
                         .fontWeight(.bold)
                         .foregroundColor(.black)
-                        .offset(x: 70, y: -163)
+                        .offset(x: 70, y: -250)
                     
                     Text("Achat Effectué")
-                        .font(.title3)
+                        .font(.system(size: 13))
                         .fontWeight(.light)
                         .foregroundColor(.black)
-                        .offset(x: -70, y: -160)
+                        .offset(x: -70, y: -250)
                     
                     Text("Achat")
-                        .font(.title3)
+                        .font(.system(size: 13))
                         .fontWeight(.light)
                         .foregroundColor(.black)
-                        .offset(x: 70, y: -183)
+                        .offset(x: 70, y: -265)
+                }
+                HStack{
+                    VStack(alignment: .leading, spacing: 0) {
+                        NavigationLink(destination: Settings()) {
+                      Text("Edit")
+                        }
+                        .font(Font.custom("SF Pro Text", size: 14).weight(.medium))
+                        .lineSpacing(18)
+                        .foregroundColor(.white)
+                    }
+                    .padding(
+                      EdgeInsets(top: 5.50, leading: 16, bottom: 6.50, trailing: 16)
+                    )
+                    .frame(width: 91, height: 30)
+                    .background(Color.black)
+                    .cornerRadius(10)
+                    .position(x:320, y:-220)
+                    VStack(alignment: .leading, spacing: 0) {
+                      Text("Accueil")
+                        .font(Font.custom("SF Pro Text", size: 14).weight(.medium))
+                        .lineSpacing(18)
+                        .foregroundColor(.white)
+                    }
+                    .padding(
+                      EdgeInsets(top: 5.50, leading: 16, bottom: 6.50, trailing: 16)
+                    )
+                    .frame(width: 91, height: 30)
+                    .background(Color.black)
+                    .cornerRadius(10)
+                    .position(x:50, y:-220)
                 }
                 
-                HStack {
-                    Rectangle()
-                        .foregroundColor(.clear)
-                        .frame(width: 355, height: 85)
-                        .background(Color.white)
-                        .cornerRadius(10)
-                        .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4)
-                        .overlay(
-                            Image("arrow")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 30, height: 30)
-                                .position(x: 300, y: 42)
-                        )
-                        .overlay(
-                            Text("Equipement Enregistrer")
-                                .foregroundColor(.black)
-                                .position(x: 150, y: 40)
-                        )
-                        .padding(-150)
-                }
+               
                 
-                HStack {
+                    HStack {
+                        Rectangle()
+                          .foregroundColor(.clear)
+                          
+                          .frame(width: 500, height: 0.5)
+                          .background(Color.black)
+                          .cornerRadius(2)
+                          .opacity(0.2)
+                          .position(x:350, y: -200)
+                    }
+                Text("Account")
+                    .font(.system(size: 12))
+                    .fontWeight(.semibold)
+                    .position(x:230, y:-190)
+                    
+                HStack{
+                    
+                    Image("shop")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 30, height: 30)
+                        .position(x: 240, y: -170)
+             
+                    Text("Achat")
+                        .font(.system(size: 15))
+                        .fontWeight(.medium)
+                        .foregroundColor(.black)
+                        .position(x:170, y:-170)
+                   
+                    Image("arrow")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 20, height: 30)
+                        .position(x:100, y: -170)
+
                     Rectangle()
-                        .foregroundColor(.clear)
-                        .frame(width: 355, height: 85)
-                        .background(Color.white)
-                        .cornerRadius(10)
-                        .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4)
-                        .overlay(
-                            Image("arrow")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 30, height: 30)
-                                .position(x: 300, y: 42)
-                        )
-                        .overlay(
-                            Text("Shop")
-                                .foregroundColor(.black)
-                                .position(x: 150, y: 40)
-                        )
-                        .padding(-60)
+                      .foregroundColor(.clear)
+                      
+                      .frame(width: 300, height: 0.5)
+                      .background(Color.black)
+                      .cornerRadius(2)
+                      .opacity(0.2)
+                      .position(x:-200, y: -140)
+                    
+                    
                 }
-                
-                HStack {
+                HStack{
+                    
+                    Image("location")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 30, height: 30)
+                        .position(x: 240, y: -140)
+             
+                    Text("Envoyer Localisation")
+                        .font(.system(size: 15))
+                        .fontWeight(.medium)
+                        .foregroundColor(.black)
+                        .position(x:170, y:-140)
+                   
+                    Image("arrow")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 20, height: 30)
+                        .position(x:100, y: -140)
+
                     Rectangle()
-                        .foregroundColor(.clear)
-                        .frame(width: 355, height: 85)
-                        .background(Color.white)
-                        .cornerRadius(10)
-                        .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4)
-                        .overlay(
-                            Image("arrow")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 30, height: 30)
-                                .position(x: 300, y: 42)
-                        )
-                        .overlay(
-                            Text("Liste Produit")
-                                .foregroundColor(.black)
-                                .position(x: 150, y: 40)
-                        )
-                        .padding(30)
+                      .foregroundColor(.clear)
+                      
+                      .frame(width: 300, height: 0.5)
+                      .background(Color.black)
+                      .cornerRadius(2)
+                      .opacity(0.2)
+                      .position(x:-200, y: -110)
+                    
+                    
                 }
-                
-                HStack {
+                HStack{
+                    
+                    Image("parametres")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 30, height: 30)
+                        .position(x: 240, y: -110)
+                    
+                    Text("Paramétre")
+                        .font(.system(size: 15))
+                        .fontWeight(.medium)
+                        .foregroundColor(.black)
+                        .position(x:170, y:-110)
+                   
+                    Image("arrow")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 20, height: 30)
+                        .position(x:100, y: -110)
+
+                    
                     Rectangle()
-                        .foregroundColor(.clear)
-                        .frame(width: 355, height: 85)
-                        .background(Color.white)
-                        .cornerRadius(10)
-                        .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4)
-                        .overlay(
-                            Image("arrow")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 30, height: 30)
-                                .position(x: 300, y: 42)
-                        )
-                        .overlay(
-                            Text("Settings")
-                                .foregroundColor(.black)
-                                .position(x: 150, y: 40)
-                        )
-                        .padding(-20)
+                      .foregroundColor(.clear)
+                      
+                      .frame(width: 300, height: 0.5)
+                      .background(Color.black)
+                      .cornerRadius(2)
+                      .opacity(0.2)
+                      .position(x:-200, y: -80)
+                    
+                    
                 }
+                NavigationLink(destination: ContentView()) {
+                    Text("Déconnécter")
+                }
+                .font(Font.custom("Inter", size: 20).weight(.bold))
+                .foregroundColor(.white)
+                .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                .frame(width: 343, height: 51)
+                .background(Color(red: 0, green: 0, blue: 0))
+                .cornerRadius(12)
+                .position(x:380 , y:-50)
+              
+              
                 
             }
-            .navigationBarBackButtonHidden(true)
+          
         }
-    }
+    }  .navigationBarBackButtonHidden(true)
+}
 }
 
 struct Home_Previews: PreviewProvider {
