@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C45E05952B02C0DF004BB883 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E05942B02C0DF004BB883 /* Settings.swift */; };
+		C45F773A2B03F76800FE0A8F /* EmailModif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F77392B03F76800FE0A8F /* EmailModif.swift */; };
+		C45F773C2B03F81100FE0A8F /* UsernameModif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F773B2B03F81100FE0A8F /* UsernameModif.swift */; };
+		C45F773E2B03F88E00FE0A8F /* PhoneModif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F773D2B03F88E00FE0A8F /* PhoneModif.swift */; };
 		C4DD6AC92AFD77D300EA4604 /* AgriConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6AC82AFD77D300EA4604 /* AgriConnectApp.swift */; };
 		C4DD6ACB2AFD77D300EA4604 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6ACA2AFD77D300EA4604 /* ContentView.swift */; };
 		C4DD6ACD2AFD77D400EA4604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DD6ACC2AFD77D400EA4604 /* Assets.xcassets */; };
@@ -44,6 +47,9 @@
 
 /* Begin PBXFileReference section */
 		C45E05942B02C0DF004BB883 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		C45F77392B03F76800FE0A8F /* EmailModif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailModif.swift; sourceTree = "<group>"; };
+		C45F773B2B03F81100FE0A8F /* UsernameModif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameModif.swift; sourceTree = "<group>"; };
+		C45F773D2B03F88E00FE0A8F /* PhoneModif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneModif.swift; sourceTree = "<group>"; };
 		C4DD6AC52AFD77D300EA4604 /* AgriConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgriConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DD6AC82AFD77D300EA4604 /* AgriConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgriConnectApp.swift; sourceTree = "<group>"; };
 		C4DD6ACA2AFD77D300EA4604 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -190,6 +196,9 @@
 			children = (
 				C4DD6B152AFD81E300EA4604 /* Home.swift */,
 				C45E05942B02C0DF004BB883 /* Settings.swift */,
+				C45F77392B03F76800FE0A8F /* EmailModif.swift */,
+				C45F773B2B03F81100FE0A8F /* UsernameModif.swift */,
+				C45F773D2B03F88E00FE0A8F /* PhoneModif.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -336,12 +345,15 @@
 				C4DD6B0B2AFD7DA300EA4604 /* OTP Verification.swift in Sources */,
 				C4DD6B162AFD81E300EA4604 /* Home.swift in Sources */,
 				C4DD6AD22AFD77D400EA4604 /* Persistence.swift in Sources */,
+				C45F773E2B03F88E00FE0A8F /* PhoneModif.swift in Sources */,
 				C4DD6AD52AFD77D400EA4604 /* AgriConnect.xcdatamodeld in Sources */,
 				C45E05952B02C0DF004BB883 /* Settings.swift in Sources */,
 				C4DD6B062AFD799000EA4604 /* ResetPassword.swift in Sources */,
 				C4DD6ACB2AFD77D300EA4604 /* ContentView.swift in Sources */,
 				C4DD6AC92AFD77D300EA4604 /* AgriConnectApp.swift in Sources */,
 				C4DD6B122AFD7FA100EA4604 /* FavoriteView.swift in Sources */,
+				C45F773C2B03F81100FE0A8F /* UsernameModif.swift in Sources */,
+				C45F773A2B03F76800FE0A8F /* EmailModif.swift in Sources */,
 				C4DD6B002AFD793600EA4604 /* ForgetPassword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ForgetPassword: View {
+struct EmailModif: View {
     @State private var email = ""
     @State private var password = ""
 
@@ -25,16 +25,16 @@ struct ForgetPassword: View {
                 // Your view content goes here
                 
                 VStack {
-                    Image("forgetpass")
+                    Image("m")
                         .resizable()
                         .scaledToFit()
                     
-                    Text("Forget Password")
+                    Text("Modifier email")
                         .font(.title)
                         .fontWeight(.bold)
                         
                     
-                    Text("Don't Worry! It occurs. Please Enter your email")
+                    Text("Write the new mail adress here.")
                     
                     ZStack(alignment: .leading) {
                         if email.isEmpty {
@@ -59,8 +59,8 @@ struct ForgetPassword: View {
                    
                   
                     
-                    NavigationLink(destination: OTP_Verification()) {
-                        Text("Send")
+                    NavigationLink(destination: Settings()) {
+                        Text("Confirmer")
                     }
                     .font(Font.custom("Inter", size: 20).weight(.bold))
                     .foregroundColor(.white)
@@ -81,8 +81,8 @@ struct ForgetPassword: View {
      
     }
 
-struct ForgetPassword_Previews: PreviewProvider {
+struct EmailModif_Previews: PreviewProvider {
     static var previews: some View {
-        ForgetPassword()
+        EmailModif()
     }
 }

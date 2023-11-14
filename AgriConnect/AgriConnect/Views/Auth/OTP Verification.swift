@@ -59,7 +59,7 @@ struct OTP_Verification: View {
                     .font(.title)
                     .foregroundColor(.white)
                     .padding()
-                    .background(Color.blue)
+                    .background(Color.black)
                     .cornerRadius(12)
             }
         }

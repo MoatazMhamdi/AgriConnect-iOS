@@ -95,7 +95,7 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
                     .frame(width: 343, height: 51)
-                    .background(Color(red: 0.37, green: 0.69, blue: 0.46))
+                    .background(Color(red: 0, green: 0, blue: 0))
                     .cornerRadius(12)
                     
                     NavigationLink(destination: SignUp()) {
@@ -112,19 +112,27 @@ struct ContentView: View {
                             .foregroundColor(.gray)
                         
                         VStack {
+                            VStack{
+                       
                             Button(action: {
                                 // Redirect to Google Sign In
                                 if let url = URL(string: "https://accounts.google.com/ServiceLogin") {
                                     UIApplication.shared.open(url)
                                 }
                             }) {
-                                Text("Google")
-                                    .foregroundColor(.white)
-                                    .bold()
-                                    .frame(maxWidth: .infinity)
-                                    .padding()
-                                    .background(Color(red: 0.37, green: 0.69, blue: 0.46))
-                                    .cornerRadius(10)
+                                HStack {
+                                    Image("g")
+                                        .resizable()
+                                        .scaledToFit()
+                                    }
+                                    Text("Google")
+                                        .foregroundColor(.white)
+                                        .bold()
+                                }
+                                .frame(width: 200, height: 30)
+                                .padding()
+                                .background(Color.red)
+                                .cornerRadius(10)
                             }
                             
                             Button(action: {
@@ -133,16 +141,24 @@ struct ContentView: View {
                                     UIApplication.shared.open(url)
                                 }
                             }) {
-                                Text("Facebook")
-                                    .foregroundColor(.white)
-                                    .bold()
-                                    .frame(maxWidth: .infinity)
-                                    .padding()
-                                    .background(Color(red: 0.37, green: 0.69, blue: 0.46))
-                                    .cornerRadius(10)
+                                HStack {
+                                    Image("f")
+                                        .resizable()
+                                        .scaledToFit()
+                                    }
+                                    Text("Facebook")
+                                        .foregroundColor(.white)
+                                        .bold()
+                                }
+                                .frame(width: 200, height: 30)
+                                .padding()
+                                .background(Color.blue)
+                                .cornerRadius(10)
                             }
                         }
-                    }
+                
+                   
+                    
                 }
             }
             .navigationBarBackButtonHidden(true)

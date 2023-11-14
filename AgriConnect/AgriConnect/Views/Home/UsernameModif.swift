@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ForgetPassword: View {
+struct UsernameModif: View {
     @State private var email = ""
     @State private var password = ""
 
@@ -25,25 +25,25 @@ struct ForgetPassword: View {
                 // Your view content goes here
                 
                 VStack {
-                    Image("forgetpass")
+                    Image("name")
                         .resizable()
                         .scaledToFit()
                     
-                    Text("Forget Password")
+                    Text("Modifier Psudo")
                         .font(.title)
                         .fontWeight(.bold)
                         
                     
-                    Text("Don't Worry! It occurs. Please Enter your email")
+                    Text("Write the new psudo here.")
                     
                     ZStack(alignment: .leading) {
                         if email.isEmpty {
-                            Text("Email")
+                            Text("User Name")
                                 .foregroundColor(.gray)
                                 .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
                         }
                         HStack {
-                            Image(systemName: "envelope")
+                            Image(systemName: "person")
                                 .foregroundColor(.gray)
                                 .padding(.leading, 8)
                             TextField("", text: $email)
@@ -59,8 +59,8 @@ struct ForgetPassword: View {
                    
                   
                     
-                    NavigationLink(destination: OTP_Verification()) {
-                        Text("Send")
+                    NavigationLink(destination: Settings()) {
+                        Text("Confirmer")
                     }
                     .font(Font.custom("Inter", size: 20).weight(.bold))
                     .foregroundColor(.white)
@@ -81,8 +81,8 @@ struct ForgetPassword: View {
      
     }
 
-struct ForgetPassword_Previews: PreviewProvider {
+struct UsernameModif_Previews: PreviewProvider {
     static var previews: some View {
-        ForgetPassword()
+        UsernameModif()
     }
 }

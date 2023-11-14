@@ -10,6 +10,8 @@ import SwiftUI
 struct Settings: View {
     @State private var darkscreen = false
     @State private var faceid = false
+    @State private var navigationLinkActive: Bool = false
+
 
     var body: some View {
         NavigationView{
@@ -88,21 +90,35 @@ struct Settings: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 30, height: 30)
                         .position(x: 240, y: -120)
+                    NavigationLink(destination: EmailModif()) {
                     Text("Email")
+                    }
                         .font(.system(size: 15))
                         .fontWeight(.light)
                         .foregroundColor(.black)
-                        .position(x:130, y:-118)
-                    Text("mo@gmail.com")
+                        .position(x:100, y:-118)
+                   
+                Text("mo@gmail.com")
+                   
+                 
                         .font(.system(size: 12))
                         .fontWeight(.light)
                         .foregroundColor(.black)
-                        .position(x:150, y:-115)
-                    Image("arrow")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 20, height: 30)
-                        .position(x:50, y: -115)
+                        .position(x:80, y:-115)
+          
+                    NavigationLink(destination: EmailModif(), isActive: $navigationLinkActive) {
+                           EmptyView()
+                       }
+                       Button(action: {
+                           navigationLinkActive = true
+                       }) {
+                           Image("arrow")
+                               .resizable()
+                               .aspectRatio(contentMode: .fit)
+                               .frame(width: 20, height: 30)
+                       }
+                       .offset(x: -50, y: -130)
+                   
                     Rectangle()
                       .foregroundColor(.clear)
                       
@@ -110,7 +126,7 @@ struct Settings: View {
                       .background(Color.black)
                       .cornerRadius(2)
                       .opacity(0.5)
-                      .position(x:-240, y: -90)
+                      .position(x:-210, y: -90)
                     
                     
                 }
@@ -125,17 +141,28 @@ struct Settings: View {
                         .font(.system(size: 15))
                         .fontWeight(.light)
                         .foregroundColor(.black)
-                        .position(x:137, y:-98)
+                        .position(x:110, y:-98)
                     Text("moataz")
                         .font(.system(size: 12))
                         .fontWeight(.light)
                         .foregroundColor(.black)
-                        .position(x:160, y:-97)
-                    Image("arrow")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 20, height: 30)
-                        .position(x:50, y: -97)
+                        .position(x:100, y:-97)
+                    
+                    
+                    NavigationLink(destination: UsernameModif(), isActive: $navigationLinkActive) {
+                           EmptyView()
+                       }
+                       Button(action: {
+                           navigationLinkActive = true
+                       }) {
+                           Image("arrow")
+                               .resizable()
+                               .aspectRatio(contentMode: .fit)
+                               .frame(width: 20, height: 30)
+                       }
+                       .offset(x: -50, y: -110)
+                   
+                        
                     Rectangle()
                       .foregroundColor(.clear)
                       
@@ -143,7 +170,7 @@ struct Settings: View {
                       .background(Color.black)
                       .cornerRadius(2)
                       .opacity(0.5)
-                      .position(x:-240, y: -70)
+                      .position(x:-210, y: -70)
                     
                     
                 }
@@ -158,17 +185,24 @@ struct Settings: View {
                         .font(.system(size: 15))
                         .fontWeight(.light)
                         .foregroundColor(.black)
-                        .position(x:144, y:-80)
+                        .position(x:110, y:-80)
                     Text("+216...")
                         .font(.system(size: 12))
                         .fontWeight(.light)
                         .foregroundColor(.black)
-                        .position(x:160, y:-80)
-                    Image("arrow")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 20, height: 30)
-                        .position(x:50, y: -77)
+                        .position(x:100, y:-77)
+                    NavigationLink(destination: PhoneModif(), isActive: $navigationLinkActive) {
+                           EmptyView()
+                       }
+                       Button(action: {
+                           navigationLinkActive = true
+                       }) {
+                           Image("arrow")
+                               .resizable()
+                               .aspectRatio(contentMode: .fit)
+                               .frame(width: 20, height: 30)
+                       }
+                       .offset(x: -50, y: -90)
                     Rectangle()
                       .foregroundColor(.clear)
                       
@@ -176,7 +210,7 @@ struct Settings: View {
                       .background(Color.black)
                       .cornerRadius(2)
                       .opacity(0.5)
-                      .position(x:-240, y: -50)
+                      .position(x:-210, y: -50)
                     
                     
                 }
@@ -261,7 +295,7 @@ struct Settings: View {
                         .fontWeight(.light)
                         .foregroundColor(.black)
                         .position(x:150, y:25)
-                    
+                
                     Image("arrow")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
