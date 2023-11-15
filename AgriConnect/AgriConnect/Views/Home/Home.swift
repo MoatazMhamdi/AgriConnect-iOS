@@ -57,7 +57,7 @@ struct Home: View {
                     
                     Image(systemName: "checkmark.seal.fill")
                         .font(.system(size: 20))
-                        .foregroundColor(Color(.green))
+                        .foregroundColor(Color(red: 0.06, green: 0.21, blue: 0.19))
                         .offset(x: 65, y: -245)
                     
                     Text("+20")
@@ -95,11 +95,12 @@ struct Home: View {
                         .lineSpacing(18)
                         .foregroundColor(.white)
                     }
+                    
                     .padding(
                       EdgeInsets(top: 5.50, leading: 16, bottom: 6.50, trailing: 16)
                     )
                     .frame(width: 91, height: 30)
-                    .background(Color.black)
+                    .background(Color(red: 0.06, green: 0.21, blue: 0.19))
                     .cornerRadius(10)
                     .position(x:320, y:-220)
                     VStack(alignment: .leading, spacing: 0) {
@@ -112,7 +113,7 @@ struct Home: View {
                       EdgeInsets(top: 5.50, leading: 16, bottom: 6.50, trailing: 16)
                     )
                     .frame(width: 91, height: 30)
-                    .background(Color.black)
+                    .background(Color(red: 0.06, green: 0.21, blue: 0.19))
                     .cornerRadius(10)
                     .position(x:50, y:-220)
                 }
@@ -235,7 +236,7 @@ struct Home: View {
                 .foregroundColor(.white)
                 .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
                 .frame(width: 343, height: 51)
-                .background(Color(red: 0, green: 0, blue: 0))
+                .background(Color(red: 0.06, green: 0.21, blue: 0.19))
                 .cornerRadius(12)
                 .position(x:380 , y:-50)
               
