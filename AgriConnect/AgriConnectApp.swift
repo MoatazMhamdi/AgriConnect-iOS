@@ -13,7 +13,7 @@ struct AgriConnectApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FirstPage()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

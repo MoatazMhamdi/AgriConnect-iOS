@@ -1,12 +1,13 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct SignInF: View {
     @State private var email = ""
     @State private var password = ""
     @State private var rememberMe = false
     @State private var isPasswordVisible = false
     @State private var navigationLinkActive: Bool = false
+
     @State private var wrongpassword = ""
     @State private var navigateToLocation = false
     
@@ -17,7 +18,7 @@ struct ContentView: View {
             NavigationView {
                 VStack {
                    
-                    Text("LOGIN")
+                    Text("FARMER LOGIN")
                         .font(.title)
                         .fontWeight(.bold)
                         .padding(10)
@@ -81,14 +82,14 @@ struct ContentView: View {
                         .foregroundColor(.gray)
                         .padding(.leading, 10)
                     
-                    NavigationLink(destination: ForgetPassword()) {
+                    NavigationLink(destination: ForgetPassF()) {
                         Text("Forgot password?")
                     }
                     .font(Font.custom("Inter", size: 14).weight(.semibold))
                     .foregroundColor(Color(red: 0.06, green: 0.21, blue: 0.19))
                     .padding(EdgeInsets(top: 5, leading: 55, bottom: 5, trailing: -150))
                     
-                    NavigationLink(destination: Home()) {
+                    NavigationLink(destination: FarmerProfile()) {
                         Text("Login")
                     }
                     .font(Font.custom("Inter", size: 20).weight(.bold))
@@ -98,7 +99,7 @@ struct ContentView: View {
                     .background(Color(red: 0.06, green: 0.21, blue: 0.19))
                     .cornerRadius(12)
                     
-                    NavigationLink(destination: SignUp()) {
+                    NavigationLink(destination: SignupF()) {
                         Text("Create your personal account!")
                     }
                     .font(Font.custom("Inter", size: 16).weight(.black))
@@ -113,27 +114,27 @@ struct ContentView: View {
                         
                         VStack {
                             VStack{
-                                NavigationLink(destination: SignInF(), isActive: $navigationLinkActive) {
+                                NavigationLink(destination: ContentView(), isActive: $navigationLinkActive) {
                                        EmptyView()
                                    }
                                    Button(action: {
                                        navigationLinkActive = true
                                    }) {
-                                HStack {
-                                    Image("fermier")
-                                        .resizable()
-                                        .scaledToFit()
+                                    HStack {
+                                        Image("h")
+                                            .resizable()
+                                            .scaledToFit()
+                                        }
+                                        Text("User")
+                                            .foregroundColor(.white)
+                                            .bold()
                                     }
-                                    Text("Farmer")
-                                        .foregroundColor(.white)
-                                        .bold()
-                                }
-                                .frame(width: 200, height: 30)
-                                .padding()
-                                .background(Color(red: 0.06, green: 0.21, blue: 0.19))
-                                .cornerRadius(10)
-                      
-                            
+                                    .frame(width: 200, height: 30)
+                                    .padding()
+                                    .background(Color(red: 0.06, green: 0.21, blue: 0.19))
+                                    .cornerRadius(10)
+                                
+                                
                             Button(action: {
                                 // Redirect to Google Sign In
                                 if let url = URL(string: "https://accounts.google.com/ServiceLogin") {
@@ -186,8 +187,8 @@ struct ContentView: View {
         
     }
     
-    struct ContentView_Previews: PreviewProvider {
+    struct SignInF_Previews: PreviewProvider {
         static var previews: some View {
-            ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+            SignInF().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
         }
     }

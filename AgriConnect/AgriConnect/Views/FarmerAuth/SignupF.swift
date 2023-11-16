@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SignUp: View {
+struct SignupF: View {
     @State private var email = ""
     @State private var password = ""
     @State private var username = ""
@@ -9,7 +9,7 @@ struct SignUp: View {
     
     var body: some View {
         VStack {
-            Text("SignUP")
+            Text("FARMER Register")
                 .font(.title)
                 .fontWeight(.black)
                 .padding(10)
@@ -128,7 +128,7 @@ struct SignUp: View {
             .padding(10)
          
             
-            NavigationLink(destination: Home()) {
+            NavigationLink(destination: FarmerProfile()) {
                 Text("Register")
                     .font(Font.custom("Inter", size: 20).weight(.black))
                     .foregroundColor(.white)
@@ -194,8 +194,8 @@ struct SignUp: View {
     }
 
 
-struct SignUp_Previews: PreviewProvider {
+struct SignupF_Previews: PreviewProvider {
     static var previews: some View {
-        SignUp()
+       SignupF()
     }
 }

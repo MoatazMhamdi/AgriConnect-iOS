@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ForgetPassword: View {
+struct ForgetPassF: View {
     @State private var email = ""
     @State private var password = ""
 
@@ -29,7 +29,7 @@ struct ForgetPassword: View {
                         .resizable()
                         .scaledToFit()
                     
-                    Text("Forget Password")
+                    Text("Send email")
                         .font(.title)
                         .fontWeight(.bold)
                         
@@ -81,8 +81,8 @@ struct ForgetPassword: View {
      
     }
 
-struct ForgetPassword_Previews: PreviewProvider {
+struct ForgetPassF_Previews: PreviewProvider {
     static var previews: some View {
-        ForgetPassword()
+        ForgetPassF()
     }
 }

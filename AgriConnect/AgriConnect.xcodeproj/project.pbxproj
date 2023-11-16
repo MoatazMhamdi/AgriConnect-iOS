@@ -26,6 +26,13 @@
 		C4DD6B0B2AFD7DA300EA4604 /* OTP Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6B0A2AFD7DA300EA4604 /* OTP Verification.swift */; };
 		C4DD6B122AFD7FA100EA4604 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6B112AFD7FA100EA4604 /* FavoriteView.swift */; };
 		C4DD6B162AFD81E300EA4604 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6B152AFD81E300EA4604 /* Home.swift */; };
+		C4F5417D2B05644600397AB5 /* SignupF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F5417C2B05644600397AB5 /* SignupF.swift */; };
+		C4F5417F2B05645400397AB5 /* SignInF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F5417E2B05645400397AB5 /* SignInF.swift */; };
+		C4F541822B05648400397AB5 /* ForgetPassF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F541812B05648400397AB5 /* ForgetPassF.swift */; };
+		C4F541862B0564B400397AB5 /* ResetPassF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F541852B0564B400397AB5 /* ResetPassF.swift */; };
+		C4F541882B0564D400397AB5 /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F541872B0564D400397AB5 /* FirstPage.swift */; };
+		C4F5418A2B056BA100397AB5 /* OTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F541892B056BA100397AB5 /* OTP.swift */; };
+		C4F5418F2B056CA900397AB5 /* FarmerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F5418E2B056CA900397AB5 /* FarmerProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +75,13 @@
 		C4DD6B0A2AFD7DA300EA4604 /* OTP Verification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OTP Verification.swift"; sourceTree = "<group>"; };
 		C4DD6B112AFD7FA100EA4604 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		C4DD6B152AFD81E300EA4604 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C4F5417C2B05644600397AB5 /* SignupF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupF.swift; sourceTree = "<group>"; };
+		C4F5417E2B05645400397AB5 /* SignInF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInF.swift; sourceTree = "<group>"; };
+		C4F541812B05648400397AB5 /* ForgetPassF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassF.swift; sourceTree = "<group>"; };
+		C4F541852B0564B400397AB5 /* ResetPassF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassF.swift; sourceTree = "<group>"; };
+		C4F541872B0564D400397AB5 /* FirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
+		C4F541892B056BA100397AB5 /* OTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTP.swift; sourceTree = "<group>"; };
+		C4F5418E2B056CA900397AB5 /* FarmerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmerProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,9 +172,12 @@
 		C4DD6AF72AFD77F700EA4604 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C4F5418B2B056BD600397AB5 /* HomeFarmer */,
+				C4F5417B2B05642100397AB5 /* FarmerAuth */,
 				C4DD6B102AFD7F6B00EA4604 /* NavBar */,
 				C4DD6B072AFD79B000EA4604 /* Home */,
 				C4DD6AFE2AFD790B00EA4604 /* Auth */,
+				C4F541872B0564D400397AB5 /* FirstPage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +226,26 @@
 				C4DD6B112AFD7FA100EA4604 /* FavoriteView.swift */,
 			);
 			path = NavBar;
+			sourceTree = "<group>";
+		};
+		C4F5417B2B05642100397AB5 /* FarmerAuth */ = {
+			isa = PBXGroup;
+			children = (
+				C4F5417E2B05645400397AB5 /* SignInF.swift */,
+				C4F5417C2B05644600397AB5 /* SignupF.swift */,
+				C4F541812B05648400397AB5 /* ForgetPassF.swift */,
+				C4F541852B0564B400397AB5 /* ResetPassF.swift */,
+				C4F541892B056BA100397AB5 /* OTP.swift */,
+			);
+			path = FarmerAuth;
+			sourceTree = "<group>";
+		};
+		C4F5418B2B056BD600397AB5 /* HomeFarmer */ = {
+			isa = PBXGroup;
+			children = (
+				C4F5418E2B056CA900397AB5 /* FarmerProfile.swift */,
+			);
+			path = HomeFarmer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,20 +378,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F5418F2B056CA900397AB5 /* FarmerProfile.swift in Sources */,
 				C4DD6B022AFD794600EA4604 /* SignUp.swift in Sources */,
 				C4DD6B0B2AFD7DA300EA4604 /* OTP Verification.swift in Sources */,
 				C4DD6B162AFD81E300EA4604 /* Home.swift in Sources */,
+				C4F5417D2B05644600397AB5 /* SignupF.swift in Sources */,
 				C4DD6AD22AFD77D400EA4604 /* Persistence.swift in Sources */,
 				C45F773E2B03F88E00FE0A8F /* PhoneModif.swift in Sources */,
+				C4F5417F2B05645400397AB5 /* SignInF.swift in Sources */,
 				C4DD6AD52AFD77D400EA4604 /* AgriConnect.xcdatamodeld in Sources */,
 				C45E05952B02C0DF004BB883 /* Settings.swift in Sources */,
+				C4F541822B05648400397AB5 /* ForgetPassF.swift in Sources */,
+				C4F541882B0564D400397AB5 /* FirstPage.swift in Sources */,
 				C4DD6B062AFD799000EA4604 /* ResetPassword.swift in Sources */,
+				C4F541862B0564B400397AB5 /* ResetPassF.swift in Sources */,
 				C4DD6ACB2AFD77D300EA4604 /* ContentView.swift in Sources */,
 				C4DD6AC92AFD77D300EA4604 /* AgriConnectApp.swift in Sources */,
 				C4DD6B122AFD7FA100EA4604 /* FavoriteView.swift in Sources */,
 				C45F773C2B03F81100FE0A8F /* UsernameModif.swift in Sources */,
 				C45F773A2B03F76800FE0A8F /* EmailModif.swift in Sources */,
 				C4DD6B002AFD793600EA4604 /* ForgetPassword.swift in Sources */,
+				C4F5418A2B056BA100397AB5 /* OTP.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

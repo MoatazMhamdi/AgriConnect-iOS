@@ -61,7 +61,7 @@ struct Settings: View {
                     
                     Image(systemName: "checkmark.seal.fill")
                         .font(.system(size: 20))
-                        .foregroundColor(Color(.green))
+                        .foregroundColor(Color(red: 0.06, green: 0.21, blue: 0.19))
                         .position(x:50, y:-110)
                     
              }
@@ -319,7 +319,8 @@ struct Settings: View {
                 .foregroundColor(.white)
                 .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
                 .frame(width: 343, height: 51)
-                .background(Color(red: 0, green: 0, blue: 0))
+                .background(Color(red: 0.06, green: 0.21, blue: 0.19))
+                
                 .cornerRadius(12)
                 .position(x:370 , y:80)
                 

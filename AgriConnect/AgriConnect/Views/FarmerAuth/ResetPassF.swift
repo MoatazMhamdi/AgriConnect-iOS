@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ResetPassword: View {
+struct ResetPassF: View {
     
     @State private var password = ""
     @State private var Confirmpassword = ""
@@ -35,7 +35,7 @@ struct ResetPassword: View {
                         .scaledToFit()
                         .padding(-60)
                     
-                    Text("Reset Password")
+                    Text("Reset Your Password")
                         .font(.title)
                         .fontWeight(.bold)
                         
@@ -133,8 +133,8 @@ struct ResetPassword: View {
      
     }
 
-struct ResetPassword_Previews: PreviewProvider {
+struct ResetPassF_Previews: PreviewProvider {
     static var previews: some View {
-        ResetPassword()
+        ResetPassF()
     }
 }

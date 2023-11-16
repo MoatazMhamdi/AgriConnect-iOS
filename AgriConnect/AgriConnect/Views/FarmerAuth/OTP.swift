@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct OTP_Verification: View {
+struct OTP: View {
     @State private var otp = ""
     @State private var navigationLinkActive: Bool = false
 
@@ -11,7 +11,7 @@ struct OTP_Verification: View {
                 .scaledToFit()
                 .padding(-60)
             
-            Text("OTP Verification")
+            Text("Validation OTP")
                 .font(.title)
                 .fontWeight(.bold)
             
@@ -53,7 +53,7 @@ struct OTP_Verification: View {
             }
             .padding(30)
             
-            NavigationLink(destination: ResetPassword(), isActive: $navigationLinkActive) {
+            NavigationLink(destination: ResetPassF(), isActive: $navigationLinkActive) {
                    EmptyView()
                }
                Button(action: {
@@ -72,8 +72,8 @@ struct OTP_Verification: View {
     }
 }
 
-struct OTP_Verification_Previews: PreviewProvider {
+struct OTP_Previews: PreviewProvider {
     static var previews: some View {
-        OTP_Verification()
+        OTP()
     }
 }
