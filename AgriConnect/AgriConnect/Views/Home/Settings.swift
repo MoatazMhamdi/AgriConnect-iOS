@@ -13,6 +13,7 @@ struct Settings: View {
     @State private var navigationLinkActive: Bool = false
 
 
+
     var body: some View {
         NavigationView{
         
@@ -312,17 +313,21 @@ struct Settings: View {
                     
                     
                 }
-                NavigationLink(destination: ContentView()) {
-                    Text("Déconnécter")
-                }
-                .font(Font.custom("Inter", size: 20).weight(.bold))
-                .foregroundColor(.white)
-                .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
-                .frame(width: 343, height: 51)
-                .background(Color(red: 0.06, green: 0.21, blue: 0.19))
                 
-                .cornerRadius(12)
-                .position(x:370 , y:80)
+                NavigationLink(destination: ContentView(), isActive: $navigationLinkActive) {
+                       EmptyView()
+                   }
+                   Button(action: {
+                       navigationLinkActive = true
+                   }) {
+                       Text("Sign Out")
+                           .font(Font.custom("Inter", size: 20).weight(.bold))
+                           .foregroundColor(.white)
+                           .frame(width: 343, height: 51)
+                           .background(Color(red: 0.06, green: 0.21, blue: 0.19))
+                           .cornerRadius(12)
+                           .position(x:373 , y:100)
+                   }
                 
               
                 

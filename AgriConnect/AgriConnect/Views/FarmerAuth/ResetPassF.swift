@@ -11,6 +11,7 @@ struct ResetPassF: View {
     
     @State private var password = ""
     @State private var Confirmpassword = ""
+    @State private var navigationLinkActive: Bool = false
 
     @State private var isPasswordVisible = false
     @State private var isConfirmPasswordVisible = false

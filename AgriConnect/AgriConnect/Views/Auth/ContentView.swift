@@ -86,17 +86,27 @@ struct ContentView: View {
                     }
                     .font(Font.custom("Inter", size: 14).weight(.semibold))
                     .foregroundColor(Color(red: 0.06, green: 0.21, blue: 0.19))
+                    
                     .padding(EdgeInsets(top: 5, leading: 55, bottom: 5, trailing: -150))
                     
-                    NavigationLink(destination: Home()) {
-                        Text("Login")
-                    }
-                    .font(Font.custom("Inter", size: 20).weight(.bold))
-                    .foregroundColor(.white)
-                    .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
-                    .frame(width: 343, height: 51)
-                    .background(Color(red: 0.06, green: 0.21, blue: 0.19))
-                    .cornerRadius(12)
+                    
+                    
+                    
+                    
+                    NavigationLink(destination: Home(), isActive: $navigationLinkActive) {
+                           EmptyView()
+                       }
+                       Button(action: {
+                           navigationLinkActive = true
+                       }) {
+                           Text("Login")
+                               .font(Font.custom("Inter", size: 20).weight(.bold))
+                               .foregroundColor(.white)
+                               .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                               .frame(width: 343, height: 51)
+                               .background(Color(red: 0.06, green: 0.21, blue: 0.19))
+                               .cornerRadius(12)
+                       }
                     
                     NavigationLink(destination: SignUp()) {
                         Text("Create your personal account!")

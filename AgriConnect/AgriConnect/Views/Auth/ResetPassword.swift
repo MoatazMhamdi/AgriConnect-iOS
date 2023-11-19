@@ -14,6 +14,7 @@ struct ResetPassword: View {
 
     @State private var isPasswordVisible = false
     @State private var isConfirmPasswordVisible = false
+    @State private var navigationLinkActive: Bool = false
 
 
   
@@ -111,15 +112,21 @@ struct ResetPassword: View {
                     .padding(10)
                   
                     
-                    NavigationLink(destination: Home()) {
-                        Text("Send")
-                    }
-                    .font(Font.custom("Inter", size: 20).weight(.bold))
-                    .foregroundColor(.white)
-                    .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
-                    .frame(width: 343, height: 51)
-                    .background(Color(red: 0.06, green: 0.21, blue: 0.19))
-                    .cornerRadius(12)
+                    NavigationLink(destination: Home(), isActive: $navigationLinkActive) {
+                           EmptyView()
+                       }
+                       Button(action: {
+                           navigationLinkActive = true
+                       }) {
+                           Text("SignUp")
+                               .font(Font.custom("Inter", size: 20).weight(.bold))
+                               .foregroundColor(.white)
+                               .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                               .frame(width: 343, height: 51)
+                               .background(Color(red: 0.06, green: 0.21, blue: 0.19))
+                               .cornerRadius(12)
+                       }
+
                   
                 }
             

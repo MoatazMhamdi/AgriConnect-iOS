@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C432D9542B06E13D00C51A06 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C432D9532B06E13D00C51A06 /* User.swift */; };
+		C44953122B06DBEA00077873 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C44953112B06DBEA00077873 /* Alamofire */; };
 		C45E05952B02C0DF004BB883 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E05942B02C0DF004BB883 /* Settings.swift */; };
 		C45F773A2B03F76800FE0A8F /* EmailModif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F77392B03F76800FE0A8F /* EmailModif.swift */; };
 		C45F773C2B03F81100FE0A8F /* UsernameModif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F773B2B03F81100FE0A8F /* UsernameModif.swift */; };
 		C45F773E2B03F88E00FE0A8F /* PhoneModif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F773D2B03F88E00FE0A8F /* PhoneModif.swift */; };
+		C4CA74342B09784D009423D6 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA74332B09784D009423D6 /* ApiManager.swift */; };
+		C4CA74362B097A4C009423D6 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA74352B097A4C009423D6 /* UserViewModel.swift */; };
 		C4DD6AC92AFD77D300EA4604 /* AgriConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6AC82AFD77D300EA4604 /* AgriConnectApp.swift */; };
 		C4DD6ACB2AFD77D300EA4604 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6ACA2AFD77D300EA4604 /* ContentView.swift */; };
 		C4DD6ACD2AFD77D400EA4604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DD6ACC2AFD77D400EA4604 /* Assets.xcassets */; };
@@ -53,10 +57,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C432D9532B06E13D00C51A06 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C45E05942B02C0DF004BB883 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		C45F77392B03F76800FE0A8F /* EmailModif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailModif.swift; sourceTree = "<group>"; };
 		C45F773B2B03F81100FE0A8F /* UsernameModif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameModif.swift; sourceTree = "<group>"; };
 		C45F773D2B03F88E00FE0A8F /* PhoneModif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneModif.swift; sourceTree = "<group>"; };
+		C4CA74332B09784D009423D6 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		C4CA74352B097A4C009423D6 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		C4DD6AC52AFD77D300EA4604 /* AgriConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgriConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DD6AC82AFD77D300EA4604 /* AgriConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgriConnectApp.swift; sourceTree = "<group>"; };
 		C4DD6ACA2AFD77D300EA4604 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44953122B06DBEA00077873 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +117,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C432D9522B06E12B00C51A06 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C432D9532B06E13D00C51A06 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C432D9552B06E37000C51A06 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C4CA74352B097A4C009423D6 /* UserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C432D9582B070F0E00C51A06 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C4CA74332B09784D009423D6 /* ApiManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		C4DD6ABC2AFD77D300EA4604 = {
 			isa = PBXGroup;
 			children = (
@@ -135,8 +167,9 @@
 		C4DD6AC72AFD77D300EA4604 /* AgriConnect */ = {
 			isa = PBXGroup;
 			children = (
-				C4DD6AF92AFD783400EA4604 /* Models */,
-				C4DD6AF82AFD782B00EA4604 /* ViewsModel */,
+				C432D9582B070F0E00C51A06 /* Services */,
+				C432D9552B06E37000C51A06 /* ViewModels */,
+				C432D9522B06E12B00C51A06 /* Models */,
 				C4DD6AF72AFD77F700EA4604 /* Views */,
 				C4DD6AD32AFD77D400EA4604 /* AgriConnect.xcdatamodeld */,
 				C4DD6ACE2AFD77D400EA4604 /* Preview Content */,
@@ -180,20 +213,6 @@
 				C4F541872B0564D400397AB5 /* FirstPage.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		C4DD6AF82AFD782B00EA4604 /* ViewsModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewsModel;
-			sourceTree = "<group>";
-		};
-		C4DD6AF92AFD783400EA4604 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		C4DD6AFE2AFD790B00EA4604 /* Auth */ = {
@@ -264,6 +283,9 @@
 			dependencies = (
 			);
 			name = AgriConnect;
+			packageProductDependencies = (
+				C44953112B06DBEA00077873 /* Alamofire */,
+			);
 			productName = AgriConnect;
 			productReference = C4DD6AC52AFD77D300EA4604 /* AgriConnect.app */;
 			productType = "com.apple.product-type.application";
@@ -336,6 +358,9 @@
 				Base,
 			);
 			mainGroup = C4DD6ABC2AFD77D300EA4604;
+			packageReferences = (
+				C44953102B06DBEA00077873 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = C4DD6AC62AFD77D300EA4604 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -379,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4F5418F2B056CA900397AB5 /* FarmerProfile.swift in Sources */,
+				C4CA74362B097A4C009423D6 /* UserViewModel.swift in Sources */,
 				C4DD6B022AFD794600EA4604 /* SignUp.swift in Sources */,
 				C4DD6B0B2AFD7DA300EA4604 /* OTP Verification.swift in Sources */,
 				C4DD6B162AFD81E300EA4604 /* Home.swift in Sources */,
@@ -388,6 +414,7 @@
 				C4F5417F2B05645400397AB5 /* SignInF.swift in Sources */,
 				C4DD6AD52AFD77D400EA4604 /* AgriConnect.xcdatamodeld in Sources */,
 				C45E05952B02C0DF004BB883 /* Settings.swift in Sources */,
+				C432D9542B06E13D00C51A06 /* User.swift in Sources */,
 				C4F541822B05648400397AB5 /* ForgetPassF.swift in Sources */,
 				C4F541882B0564D400397AB5 /* FirstPage.swift in Sources */,
 				C4DD6B062AFD799000EA4604 /* ResetPassword.swift in Sources */,
@@ -397,6 +424,7 @@
 				C4DD6B122AFD7FA100EA4604 /* FavoriteView.swift in Sources */,
 				C45F773C2B03F81100FE0A8F /* UsernameModif.swift in Sources */,
 				C45F773A2B03F76800FE0A8F /* EmailModif.swift in Sources */,
+				C4CA74342B09784D009423D6 /* ApiManager.swift in Sources */,
 				C4DD6B002AFD793600EA4604 /* ForgetPassword.swift in Sources */,
 				C4F5418A2B056BA100397AB5 /* OTP.swift in Sources */,
 			);
@@ -722,6 +750,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C44953102B06DBEA00077873 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C44953112B06DBEA00077873 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C44953102B06DBEA00077873 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C4DD6AD32AFD77D400EA4604 /* AgriConnect.xcdatamodeld */ = {

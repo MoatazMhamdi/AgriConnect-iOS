@@ -1,7 +1,8 @@
 import SwiftUI
 
 struct FarmerProfile: View {
-    
+    @State private var navigationLinkActive: Bool = false
+
     var body: some View {
         NavigationView{
         

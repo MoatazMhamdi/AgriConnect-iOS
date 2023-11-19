@@ -10,6 +10,7 @@ import SwiftUI
 struct ForgetPassF: View {
     @State private var email = ""
     @State private var password = ""
+    @State private var navigationLinkActive: Bool = false
 
     @State private var wrongpassword = ""
     @State private var navigateToLocation = false
