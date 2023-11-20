@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C432D9542B06E13D00C51A06 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C432D9532B06E13D00C51A06 /* User.swift */; };
+		C434C6B22B0AACF3003629D7 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C434C6B12B0AACF3003629D7 /* SessionManager.swift */; };
+		C434C6B42B0AAEE1003629D7 /* SigInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C434C6B32B0AAEE1003629D7 /* SigInViewModel.swift */; };
+		C434C6B62B0AD1B1003629D7 /* UserRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C434C6B52B0AD1B1003629D7 /* UserRegistration.swift */; };
 		C44953122B06DBEA00077873 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C44953112B06DBEA00077873 /* Alamofire */; };
 		C45E05952B02C0DF004BB883 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E05942B02C0DF004BB883 /* Settings.swift */; };
 		C45F773A2B03F76800FE0A8F /* EmailModif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F77392B03F76800FE0A8F /* EmailModif.swift */; };
@@ -57,7 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C432D9532B06E13D00C51A06 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C434C6B12B0AACF3003629D7 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		C434C6B32B0AAEE1003629D7 /* SigInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigInViewModel.swift; sourceTree = "<group>"; };
+		C434C6B52B0AD1B1003629D7 /* UserRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistration.swift; sourceTree = "<group>"; };
 		C45E05942B02C0DF004BB883 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		C45F77392B03F76800FE0A8F /* EmailModif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailModif.swift; sourceTree = "<group>"; };
 		C45F773B2B03F81100FE0A8F /* UsernameModif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameModif.swift; sourceTree = "<group>"; };
@@ -120,7 +124,7 @@
 		C432D9522B06E12B00C51A06 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C432D9532B06E13D00C51A06 /* User.swift */,
+				C434C6B52B0AD1B1003629D7 /* UserRegistration.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -129,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				C4CA74352B097A4C009423D6 /* UserViewModel.swift */,
+				C434C6B32B0AAEE1003629D7 /* SigInViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				C4CA74332B09784D009423D6 /* ApiManager.swift */,
+				C434C6B12B0AACF3003629D7 /* SessionManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -406,15 +412,17 @@
 				C4F5418F2B056CA900397AB5 /* FarmerProfile.swift in Sources */,
 				C4CA74362B097A4C009423D6 /* UserViewModel.swift in Sources */,
 				C4DD6B022AFD794600EA4604 /* SignUp.swift in Sources */,
+				C434C6B22B0AACF3003629D7 /* SessionManager.swift in Sources */,
 				C4DD6B0B2AFD7DA300EA4604 /* OTP Verification.swift in Sources */,
+				C434C6B62B0AD1B1003629D7 /* UserRegistration.swift in Sources */,
 				C4DD6B162AFD81E300EA4604 /* Home.swift in Sources */,
 				C4F5417D2B05644600397AB5 /* SignupF.swift in Sources */,
 				C4DD6AD22AFD77D400EA4604 /* Persistence.swift in Sources */,
 				C45F773E2B03F88E00FE0A8F /* PhoneModif.swift in Sources */,
 				C4F5417F2B05645400397AB5 /* SignInF.swift in Sources */,
 				C4DD6AD52AFD77D400EA4604 /* AgriConnect.xcdatamodeld in Sources */,
+				C434C6B42B0AAEE1003629D7 /* SigInViewModel.swift in Sources */,
 				C45E05952B02C0DF004BB883 /* Settings.swift in Sources */,
-				C432D9542B06E13D00C51A06 /* User.swift in Sources */,
 				C4F541822B05648400397AB5 /* ForgetPassF.swift in Sources */,
 				C4F541882B0564D400397AB5 /* FirstPage.swift in Sources */,
 				C4DD6B062AFD799000EA4604 /* ResetPassword.swift in Sources */,

@@ -2,14 +2,20 @@ import SwiftUI
 import CoreData
 
 struct SignInF: View {
-    @State private var email = ""
+    @State private var numTel = ""
     @State private var password = ""
     @State private var rememberMe = false
     @State private var isPasswordVisible = false
     @State private var navigationLinkActive: Bool = false
-
     @State private var wrongpassword = ""
     @State private var navigateToLocation = false
+    @State private var isLoggedIn = false
+
+    @State var isLogged = false
+    @StateObject var siginViewModel = SigInViewModel()
+    
+    
+
     
     var body: some View {
         
@@ -26,16 +32,16 @@ struct SignInF: View {
                     Text("Please enter your data to connect")
                     
                     ZStack(alignment: .leading) {
-                        if email.isEmpty {
-                            Text("Email")
+                        if numTel.isEmpty {
+                            Text("+216")
                                 .foregroundColor(.gray)
                                 .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
                         }
                         HStack {
-                            Image(systemName: "person")
+                            Image(systemName: "phone")
                                 .foregroundColor(.gray)
                                 .padding(.leading, 8)
-                            TextField("", text: $email)
+                            TextField("", text: $numTel)
                                 .font(.title3)
                                 .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
                         }
@@ -89,15 +95,34 @@ struct SignInF: View {
                     .foregroundColor(Color(red: 0.06, green: 0.21, blue: 0.19))
                     .padding(EdgeInsets(top: 5, leading: 55, bottom: 5, trailing: -150))
                     
-                    NavigationLink(destination: FarmerProfile()) {
-                        Text("Login")
-                    }
-                    .font(Font.custom("Inter", size: 20).weight(.bold))
-                    .foregroundColor(.white)
-                    .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
-                    .frame(width: 343, height: 51)
-                    .background(Color(red: 0.06, green: 0.21, blue: 0.19))
-                    .cornerRadius(12)
+                    NavigationLink(destination: FarmerProfile(), isActive: $isLoggedIn) {
+                           EmptyView()
+                       }
+                       Button(action: {
+                           navigationLinkActive = true
+                           
+                           SigInViewModel().login(numTel: numTel, password: password) { result in
+                               switch result {
+                               case .success(let user):
+                                   if let token = SessionManager.shared.authToken {
+                                                               print("JWT Token: \(token)")
+                                                           }
+                                   isLoggedIn = true
+
+                               case .failure(let error):
+                                   // Handle login error
+                                   print(error)
+                               }
+                           }
+                       }) {
+                           Text("Login")
+                               .font(Font.custom("Inter", size: 20).weight(.bold))
+                               .foregroundColor(.white)
+                               .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                               .frame(width: 343, height: 51)
+                               .background(Color(red: 0.06, green: 0.21, blue: 0.19))
+                               .cornerRadius(12)
+                       }
                     
                     NavigationLink(destination: SignupF()) {
                         Text("Create your personal account!")

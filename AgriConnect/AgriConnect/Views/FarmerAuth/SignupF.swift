@@ -155,7 +155,7 @@ struct SignupF: View {
             .padding(10)
          
             
-            NavigationLink(destination: FarmerProfile(), isActive: $navigationLinkActive) {
+            NavigationLink(destination: SignInF(), isActive: $navigationLinkActive) {
                    EmptyView()
                }
                Button(action: {

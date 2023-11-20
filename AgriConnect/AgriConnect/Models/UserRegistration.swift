@@ -6,13 +6,19 @@
 //
 
 import Foundation
-struct UserRegistration: Codable{
+import SwiftUI
+import CoreData
+struct UserRegistration: Decodable ,Encodable{
+    var _id: String?
     var name: String
     var email: String
     var password: String
     var numTel: String
+    var role: String?
+
  
 }
+
 struct RegistrationError: Identifiable {
     let id = UUID()
     let message: String

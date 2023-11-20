@@ -154,13 +154,13 @@ struct SignUp: View {
             .padding(10)
          
             
-            NavigationLink(destination: Home(), isActive: $navigationLinkActive) {
+            NavigationLink(destination: ContentView(), isActive: $navigationLinkActive) {
                    EmptyView()
                }
                Button(action: {
                    navigationLinkActive = true
                    
-                   userViewModel.registerClient(name: name, email: email, password: password, numTel: numTel)
+                   userViewModel.registerClient( name: name, email: email, password: password, numTel: numTel)
                }) {
                    Text("SignUp")
                        .font(Font.custom("Inter", size: 20).weight(.bold))

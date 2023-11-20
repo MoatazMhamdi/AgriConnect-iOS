@@ -2,14 +2,15 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @State private var email = ""
+    @State private var numTel = ""
     @State private var password = ""
     @State private var rememberMe = false
     @State private var isPasswordVisible = false
     @State private var navigationLinkActive: Bool = false
     @State private var wrongpassword = ""
     @State private var navigateToLocation = false
-    
+    @State var isLogged = false
+    @StateObject var siginViewModel = SigInViewModel()
     var body: some View {
         
         
@@ -25,7 +26,7 @@ struct ContentView: View {
                     Text("Please enter your data to connect")
                     
                     ZStack(alignment: .leading) {
-                        if email.isEmpty {
+                        if numTel.isEmpty {
                             Text("Email")
                                 .foregroundColor(.gray)
                                 .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
@@ -34,7 +35,7 @@ struct ContentView: View {
                             Image(systemName: "person")
                                 .foregroundColor(.gray)
                                 .padding(.leading, 8)
-                            TextField("", text: $email)
+                            TextField("", text: $numTel)
                                 .font(.title3)
                                 .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
                         }
@@ -97,7 +98,17 @@ struct ContentView: View {
                            EmptyView()
                        }
                        Button(action: {
-                           navigationLinkActive = true
+                           navigationLinkActive = true      
+                           SigInViewModel().login(numTel: numTel, password: password) { result in
+                               switch result {
+                               case .success(let user):
+                                   isLogged = true
+                                   print(user)
+                               case .failure(let error):
+                                   // Handle login error
+                                   print(error)
+                               }
+                           }
                        }) {
                            Text("Login")
                                .font(Font.custom("Inter", size: 20).weight(.bold))
