@@ -65,7 +65,12 @@ class APIManager {
         }
     }
     func forgetPassword(numTel: String, completion: @escaping (Result<String, Error>) -> Void) {
-        let url = URL(string: "https://localhost:9090/users/forgetPassword")!
+        guard let url = URL(string: "http://localhost:9090/users/forgetPassword") else { return }
+        
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
   
         
         let parameters: [String: Any] = [
@@ -74,9 +79,7 @@ class APIManager {
            
         ]
 
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+      
 
         do {
             request.httpBody = try JSONSerialization.data(withJSONObject: parameters)
