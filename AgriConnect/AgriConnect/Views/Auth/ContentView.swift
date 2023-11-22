@@ -102,11 +102,22 @@ struct ContentView: View {
                            SigInViewModel().login(numTel: numTel, password: password) { result in
                                switch result {
                                case .success(let user):
+                                   // Update your session manager with the received user
+                                   SessionManager.shared.user = user
+                              
+                                   // Set the isLogged flag to true
                                    isLogged = true
+                                   
+                                   print("login succeeded")
                                    print(user)
+                                   print(SessionManager.shared.authToken)
+
+                                   // Optionally, navigate to the home page
+                                   // NavigationManager.shared.navigateToHome()
+
                                case .failure(let error):
-                                   // Handle login error
-                                   print(error)
+                                   // Handle the login failure, e.g., show an alert
+                                   print("Login failed: \(error)")
                                }
                            }
                        }) {

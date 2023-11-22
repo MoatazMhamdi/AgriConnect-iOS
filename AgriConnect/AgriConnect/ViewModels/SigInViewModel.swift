@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import Combine
 class SigInViewModel: ObservableObject {
+    
   private let apiManager = APIManager()
     func login(numTel: String, password: String, completion: @escaping (Result<UserRegistration, Error>) -> Void) {
             apiManager.login(numTel: numTel, password: password) { result in

@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ForgetPassword: View {
-    @State private var email = ""
+    @State private var numTel = ""
     @State private var password = ""
     @State private var navigationLinkActive: Bool = false
 
     @State private var wrongpassword = ""
     @State private var navigateToLocation = false
+    @StateObject var userViewModel = UserViewModel()
 
     var body: some View{
         
@@ -38,7 +39,7 @@ struct ForgetPassword: View {
                     Text("Don't Worry! It occurs. Please Enter your email")
                     
                     ZStack(alignment: .leading) {
-                        if email.isEmpty {
+                        if numTel.isEmpty {
                             Text("Email")
                                 .foregroundColor(.gray)
                                 .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
@@ -47,7 +48,7 @@ struct ForgetPassword: View {
                             Image(systemName: "envelope")
                                 .foregroundColor(.gray)
                                 .padding(.leading, 8)
-                            TextField("", text: $email)
+                            TextField("", text: $numTel)
                                 .font(.title3)
                                 .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
                         }
@@ -63,6 +64,17 @@ struct ForgetPassword: View {
                        }
                        Button(action: {
                            navigationLinkActive = true
+                           
+                           userViewModel.forgetPassword(numTel: numTel) { result in
+                               switch result {
+                               case .success(let otp):
+                                  print("OTP:\(otp)" )
+                                   
+                               case .failure(let error):
+                                   // Handle error, e.g., show an alert
+                                   print("Error sending OTP: \(error)")
+                               }
+                           }
                        }) {
                            Text("Confirm")
                                .font(Font.custom("Inter", size: 20).weight(.bold))
