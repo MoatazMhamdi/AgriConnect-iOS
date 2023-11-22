@@ -40,12 +40,12 @@ struct ForgetPassword: View {
                     
                     ZStack(alignment: .leading) {
                         if numTel.isEmpty {
-                            Text("Email")
+                            Text("Phoe Number")
                                 .foregroundColor(.gray)
                                 .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
                         }
                         HStack {
-                            Image(systemName: "envelope")
+                            Image(systemName: "Phone Number")
                                 .foregroundColor(.gray)
                                 .padding(.leading, 8)
                             TextField("", text: $numTel)

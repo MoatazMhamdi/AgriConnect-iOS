@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ForgetPassF: View {
-    @State private var email = ""
+    @State private var numTel = ""
     @State private var password = ""
     @State private var navigationLinkActive: Bool = false
 
     @State private var wrongpassword = ""
     @State private var navigateToLocation = false
+    @StateObject var userViewModel = UserViewModel()
 
     var body: some View{
         
@@ -38,16 +39,16 @@ struct ForgetPassF: View {
                     Text("Don't Worry! It occurs. Please Enter your email")
                     
                     ZStack(alignment: .leading) {
-                        if email.isEmpty {
-                            Text("Email")
+                        if numTel.isEmpty {
+                            Text("Phone Number")
                                 .foregroundColor(.gray)
                                 .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
                         }
                         HStack {
-                            Image(systemName: "envelope")
+                            Image(systemName: "phone")
                                 .foregroundColor(.gray)
                                 .padding(.leading, 8)
-                            TextField("", text: $email)
+                            TextField("", text: $numTel)
                                 .font(.title3)
                                 .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
                         }
@@ -60,15 +61,31 @@ struct ForgetPassF: View {
                    
                   
                     
-                    NavigationLink(destination: OTP_Verification()) {
-                        Text("Send")
-                    }
-                    .font(Font.custom("Inter", size: 20).weight(.bold))
-                    .foregroundColor(.white)
-                    .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
-                    .frame(width: 343, height: 51)
-                    .background(Color(red: 0.06, green: 0.21, blue: 0.19))
-                    .cornerRadius(12)
+                    NavigationLink(destination: OTP_Verification(), isActive: $navigationLinkActive) {
+                           EmptyView()
+                       }
+                       Button(action: {
+                           navigationLinkActive = true
+                           
+                           userViewModel.forgetPassword(numTel: numTel) { result in
+                               switch result {
+                               case .success(let otp):
+                                  print("OTP:\(otp)" )
+                                   
+                               case .failure(let error):
+                                   // Handle error, e.g., show an alert
+                                   print("Error sending OTP: \(error)")
+                               }
+                           }
+                       }) {
+                           Text("Confirm")
+                               .font(Font.custom("Inter", size: 20).weight(.bold))
+                               .foregroundColor(.white)
+                               .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
+                               .frame(width: 343, height: 51)
+                               .background(Color(red: 0.06, green: 0.21, blue: 0.19))
+                               .cornerRadius(12)
+                       }
                   
                 }
             
