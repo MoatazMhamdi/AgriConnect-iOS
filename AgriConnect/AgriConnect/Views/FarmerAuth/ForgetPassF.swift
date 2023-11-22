@@ -61,7 +61,7 @@ struct ForgetPassF: View {
                    
                   
                     
-                    NavigationLink(destination: OTP_Verification(), isActive: $navigationLinkActive) {
+                    NavigationLink(destination: OTP(userviewModel: UserViewModel()), isActive: $navigationLinkActive) {
                            EmptyView()
                        }
                        Button(action: {

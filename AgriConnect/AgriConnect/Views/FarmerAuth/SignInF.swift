@@ -12,6 +12,7 @@ struct SignInF: View {
     @State private var isLoggedIn = false
 
     @State var isLogged = false
+    
     @StateObject var siginViewModel = SigInViewModel()
     
     

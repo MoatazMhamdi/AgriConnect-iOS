@@ -5,6 +5,9 @@ import Foundation
 class UserViewModel: ObservableObject {
     @Published var otpSent: Bool = false
     @Published var otpResponse: String = ""
+    @Published var numTel: String = ""
+    @Published var otp: String = ""
+    @Published var verificationResult: String = ""
     private let apiManager = APIManager()
     
     func registerUser(name: String, email: String, password: String, numTel: String) {
@@ -29,5 +32,16 @@ class UserViewModel: ObservableObject {
             }
         }
         
+    }
+    
+    func verifyOTP() {
+        apiManager.verifyOTP(numTel: numTel, otp: otp) { result in
+            switch result {
+            case .success(let message):
+               print( "OTP verified: \(message)")
+            case .failure(let error):
+                print("Error verifying OTP: \(error.localizedDescription)")
+            }
+        }
     }
 }
