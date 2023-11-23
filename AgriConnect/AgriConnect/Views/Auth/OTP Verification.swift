@@ -28,7 +28,7 @@ struct OTP_Verification: View {
                     Image(systemName: "phone")
                         .foregroundColor(.gray)
                         .padding(.leading, 8)
-                    TextField("Write Code Here", text: $userviewModel.numTel)
+                    TextField("Phone Number", text: $userviewModel.numTel)
                         .font(.title3)
                         .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
                 }

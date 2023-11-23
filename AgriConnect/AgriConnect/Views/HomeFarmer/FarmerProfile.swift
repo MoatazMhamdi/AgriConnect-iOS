@@ -90,7 +90,7 @@ struct FarmerProfile: View {
                 }
                 HStack{
                     VStack(alignment: .leading, spacing: 0) {
-                        NavigationLink(destination: Settings()) {
+                        NavigationLink(destination: Setting()) {
                       Text("Edit")
                         }
                         .font(Font.custom("SF Pro Text", size: 14).weight(.medium))

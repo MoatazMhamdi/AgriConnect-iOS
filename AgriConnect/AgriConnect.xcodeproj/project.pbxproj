@@ -15,6 +15,8 @@
 		C45F773A2B03F76800FE0A8F /* EmailModif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F77392B03F76800FE0A8F /* EmailModif.swift */; };
 		C45F773C2B03F81100FE0A8F /* UsernameModif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F773B2B03F81100FE0A8F /* UsernameModif.swift */; };
 		C45F773E2B03F88E00FE0A8F /* PhoneModif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F773D2B03F88E00FE0A8F /* PhoneModif.swift */; };
+		C4A69D072B0F0CCF006E461B /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A69D062B0F0CCF006E461B /* Setting.swift */; };
+		C4A69D092B0F0E01006E461B /* Edit Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A69D082B0F0E01006E461B /* Edit Profile.swift */; };
 		C4CA74342B09784D009423D6 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA74332B09784D009423D6 /* ApiManager.swift */; };
 		C4CA74362B097A4C009423D6 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA74352B097A4C009423D6 /* UserViewModel.swift */; };
 		C4DD6AC92AFD77D300EA4604 /* AgriConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6AC82AFD77D300EA4604 /* AgriConnectApp.swift */; };
@@ -66,6 +68,8 @@
 		C45F77392B03F76800FE0A8F /* EmailModif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailModif.swift; sourceTree = "<group>"; };
 		C45F773B2B03F81100FE0A8F /* UsernameModif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameModif.swift; sourceTree = "<group>"; };
 		C45F773D2B03F88E00FE0A8F /* PhoneModif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneModif.swift; sourceTree = "<group>"; };
+		C4A69D062B0F0CCF006E461B /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		C4A69D082B0F0E01006E461B /* Edit Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Edit Profile.swift"; sourceTree = "<group>"; };
 		C4CA74332B09784D009423D6 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		C4CA74352B097A4C009423D6 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		C4DD6AC52AFD77D300EA4604 /* AgriConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgriConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -269,6 +273,8 @@
 			isa = PBXGroup;
 			children = (
 				C4F5418E2B056CA900397AB5 /* FarmerProfile.swift */,
+				C4A69D062B0F0CCF006E461B /* Setting.swift */,
+				C4A69D082B0F0E01006E461B /* Edit Profile.swift */,
 			);
 			path = HomeFarmer;
 			sourceTree = "<group>";
@@ -409,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4A69D092B0F0E01006E461B /* Edit Profile.swift in Sources */,
 				C4F5418F2B056CA900397AB5 /* FarmerProfile.swift in Sources */,
 				C4CA74362B097A4C009423D6 /* UserViewModel.swift in Sources */,
 				C4DD6B022AFD794600EA4604 /* SignUp.swift in Sources */,
@@ -426,6 +433,7 @@
 				C4F541822B05648400397AB5 /* ForgetPassF.swift in Sources */,
 				C4F541882B0564D400397AB5 /* FirstPage.swift in Sources */,
 				C4DD6B062AFD799000EA4604 /* ResetPassword.swift in Sources */,
+				C4A69D072B0F0CCF006E461B /* Setting.swift in Sources */,
 				C4F541862B0564B400397AB5 /* ResetPassF.swift in Sources */,
 				C4DD6ACB2AFD77D300EA4604 /* ContentView.swift in Sources */,
 				C4DD6AC92AFD77D300EA4604 /* AgriConnectApp.swift in Sources */,
