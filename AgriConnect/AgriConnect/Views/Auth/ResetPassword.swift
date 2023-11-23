@@ -9,16 +9,13 @@ import SwiftUI
 
 struct ResetPassword: View {
     
-    @State private var password = ""
-    @State private var Confirmpassword = ""
+    @State private var navigationLinkActive: Bool = false
 
     @State private var isPasswordVisible = false
     @State private var isConfirmPasswordVisible = false
-    @State private var navigationLinkActive: Bool = false
 
 
-  
-    @State private var navigateToLocation = false
+    @ObservedObject var userviewmodel: UserViewModel
 
     var body: some View{
         
@@ -42,33 +39,22 @@ struct ResetPassword: View {
                         
                     
                     Text("Congrats! Now you can change your password.")
-                    
                     ZStack(alignment: .leading) {
-                        if password.isEmpty {
-                            Text("Password")
+                       
+                            Text("")
                                 .foregroundColor(.gray)
                                 .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
-                        }
+                      
                         HStack {
-                            Image(systemName: "lock")
+                            Image(systemName: "phone")
                                 .foregroundColor(.gray)
                                 .padding(.leading, 8)
-                            if isPasswordVisible {
-                                TextField("", text: $password)
+                            
+                                TextField("Phone Number", text: $userviewmodel.numTel)
                                     .font(.title3)
                                     .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
-                            } else {
-                                SecureField("", text: $password)
-                                    .font(.title3)
-                                    .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
-                            }
-                            Button(action: {
-                                isPasswordVisible.toggle()
-                            }) {
-                                Image(systemName: isPasswordVisible ? "eye.slash.fill" : "eye.fill")
-                                    .foregroundColor(.gray)
-                            }
-                            .padding(.trailing, 8)
+                            
+                          
                         }
                     }
                     .frame(width: 343, height: 51)
@@ -76,24 +62,22 @@ struct ResetPassword: View {
                     .cornerRadius(10)
                     .padding(10)
                     
-                    
-                    
                     ZStack(alignment: .leading) {
-                        if Confirmpassword.isEmpty {
-                            Text("Confirm Password")
+                       
+                            Text("")
                                 .foregroundColor(.gray)
                                 .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
-                        }
+                      
                         HStack {
                             Image(systemName: "lock")
                                 .foregroundColor(.gray)
                                 .padding(.leading, 8)
                             if isConfirmPasswordVisible {
-                                TextField("", text: $Confirmpassword)
+                                TextField("", text: $userviewmodel.newPassword)
                                     .font(.title3)
                                     .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
                             } else {
-                                SecureField("", text: $Confirmpassword)
+                                SecureField("New Password", text: $userviewmodel.newPassword)
                                     .font(.title3)
                                     .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
                             }
@@ -111,14 +95,15 @@ struct ResetPassword: View {
                     .cornerRadius(10)
                     .padding(10)
                   
-                    
                     NavigationLink(destination: Home(), isActive: $navigationLinkActive) {
                            EmptyView()
                        }
                        Button(action: {
                            navigationLinkActive = true
+                           userviewmodel.resetPassword()
+
                        }) {
-                           Text("SignUp")
+                           Text("Send")
                                .font(Font.custom("Inter", size: 20).weight(.bold))
                                .foregroundColor(.white)
                                .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
@@ -142,6 +127,6 @@ struct ResetPassword: View {
 
 struct ResetPassword_Previews: PreviewProvider {
     static var previews: some View {
-        ResetPassword()
+        ResetPassword(userviewmodel: UserViewModel())
     }
 }

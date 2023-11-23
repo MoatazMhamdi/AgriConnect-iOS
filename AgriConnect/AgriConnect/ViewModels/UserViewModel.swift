@@ -7,6 +7,10 @@ class UserViewModel: ObservableObject {
     @Published var otpResponse: String = ""
     @Published var numTel: String = ""
     @Published var otp: String = ""
+        @Published var newPassword: String = ""
+        @Published var resetResult: String = ""
+        
+      
     @Published var verificationResult: String = ""
     private let apiManager = APIManager()
     
@@ -41,6 +45,16 @@ class UserViewModel: ObservableObject {
                print( "OTP verified: \(message)")
             case .failure(let error):
                 print("Error verifying OTP: \(error.localizedDescription)")
+            }
+        }
+    }
+    func resetPassword() {
+        apiManager.resetPassword(numTel: numTel, newPassword: newPassword) { result in
+            switch result {
+            case .success(let message):
+                self.resetResult = message
+            case .failure(let error):
+                self.resetResult = "Error: \(error.localizedDescription)"
             }
         }
     }

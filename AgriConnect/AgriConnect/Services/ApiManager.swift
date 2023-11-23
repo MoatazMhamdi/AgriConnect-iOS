@@ -235,6 +235,63 @@ class APIManager {
         task.resume()
     }
     
+    func resetPassword(numTel: String, newPassword: String, completion: @escaping (Result<String, Error>) -> Void) {
+        guard let url = URL(string: "http://localhost:9090/users/resetPassword") else { return }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let parameters: [String: Any] = [
+            "numTel": numTel,
+            "newPassword": newPassword
+        ]
+        
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
+        } catch {
+            completion(.failure(error))
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            
+            guard let data = data, let httpResponse = response as? HTTPURLResponse else {
+                completion(.failure(NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid response"])))
+                return
+            }
+            
+            if (200 ..< 300) ~= httpResponse.statusCode {
+                // Successful response
+                if let message = String(data: data, encoding: .utf8) {
+                    completion(.success(message))
+                } else {
+                    completion(.failure(NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid response data"])))
+                }
+            } else {
+                // Handle error response
+                do {
+                    let errorResponse = try JSONDecoder().decode([String: String].self, from: data)
+                    if let errorMessage = errorResponse["error"] {
+                        completion(.failure(NSError(domain: "", code: httpResponse.statusCode, userInfo: [NSLocalizedDescriptionKey: errorMessage])))
+                    } else {
+                        completion(.failure(NSError(domain: "", code: httpResponse.statusCode, userInfo: [NSLocalizedDescriptionKey: "Unknown error"])))
+                    }
+                } catch {
+                    completion(.failure(error))
+                }
+            }
+        }
+        
+        task.resume()
+    }
+
+
+    
     
     
 }

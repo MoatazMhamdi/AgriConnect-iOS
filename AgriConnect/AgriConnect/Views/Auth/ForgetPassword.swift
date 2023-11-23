@@ -40,12 +40,12 @@ struct ForgetPassword: View {
                     
                     ZStack(alignment: .leading) {
                         if numTel.isEmpty {
-                            Text("Phoe Number")
+                            Text("Phone Number")
                                 .foregroundColor(.gray)
                                 .padding(EdgeInsets(top: 16, leading: 32, bottom: 16, trailing: 32))
                         }
                         HStack {
-                            Image(systemName: "Phone Number")
+                            Image(systemName: "phone")
                                 .foregroundColor(.gray)
                                 .padding(.leading, 8)
                             TextField("", text: $numTel)
@@ -59,7 +59,7 @@ struct ForgetPassword: View {
                     .padding(10)
                     
                    
-                    NavigationLink(destination: OTP_Verification(), isActive: $navigationLinkActive) {
+                    NavigationLink(destination: OTP_Verification(userviewModel: UserViewModel()), isActive: $navigationLinkActive) {
                            EmptyView()
                        }
                        Button(action: {

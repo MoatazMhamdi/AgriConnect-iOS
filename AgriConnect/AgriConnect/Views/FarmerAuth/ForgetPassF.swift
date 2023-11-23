@@ -27,11 +27,13 @@ struct ForgetPassF: View {
                 // Your view content goes here
                 
                 VStack {
-                    Image("forgetpass")
+                    Image("farmer")
                         .resizable()
                         .scaledToFit()
+                        .padding(-60)
+                        .offset(x:0, y:-30)
                     
-                    Text("Send email")
+                    Text("Send email farmer")
                         .font(.title)
                         .fontWeight(.bold)
                         
