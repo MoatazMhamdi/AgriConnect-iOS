@@ -11,6 +11,8 @@ struct Setting: View {
     @State private var darkscreen = false
     @State private var faceid = false
     @State private var navigationLinkActive: Bool = false
+    @Environment(\.colorScheme) var colorScheme
+     @State private var darkModeEnabled = false
 
 
 
@@ -142,17 +144,16 @@ struct Setting: View {
                 .position(x:230, y:-40)
                 HStack{
                     
-                    Image("croissant-de-lune")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 30, height: 30)
-                        .position(x: 240, y: -20)
-             
-                    Toggle("Dark Mode", isOn: $darkscreen)
-                        .foregroundColor(.black)
-                        .padding(.leading, 10)
-                        .position(x:140, y:-20)
+                    Image(systemName: darkModeEnabled ? "moon.fill" : "moon")
+                                       .resizable()
+                                       .aspectRatio(contentMode: .fit)
+                                       .frame(width: 30, height: 30)
+                                       .position(x: 240, y: -20)
 
+                                   Toggle("Dark Mode", isOn: $darkModeEnabled)
+                                       .foregroundColor(.black)
+                                       .padding(.leading, 10)
+                                       .position(x: 140, y: -20)
                     Rectangle()
                       .foregroundColor(.clear)
                       
@@ -164,6 +165,7 @@ struct Setting: View {
                     
                     
                 }
+
                 HStack{
                     
                     Image("selfie")
@@ -239,12 +241,15 @@ struct Setting: View {
                    }
                 
               
-                
+
 
         }
     }
 }  .navigationBarBackButtonHidden(true)
+.preferredColorScheme(darkModeEnabled ? .dark : .light)
+
 }
+    
 }
 #Preview {
     Settings()

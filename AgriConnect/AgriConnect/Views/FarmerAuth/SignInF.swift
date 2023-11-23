@@ -96,7 +96,7 @@ struct SignInF: View {
                     .foregroundColor(Color(red: 0.06, green: 0.21, blue: 0.19))
                     .padding(EdgeInsets(top: 5, leading: 55, bottom: 5, trailing: -150))
                     
-                    NavigationLink(destination: FarmerProfile(), isActive: $isLoggedIn) {
+                    NavigationLink(destination: FarmerProfile(), isActive: $navigationLinkActive) {
                            EmptyView()
                        }
                        Button(action: {

@@ -102,7 +102,8 @@ struct ContentView: View {
                            SigInViewModel().login(numTel: numTel, password: password) { result in
                                switch result {
                                case .success(let user):
-                                   // Update your session manager with the received user
+                                         // Check if the user exists in the database
+                                      
                                    SessionManager.shared.user = user
                               
                                    // Set the isLogged flag to true
