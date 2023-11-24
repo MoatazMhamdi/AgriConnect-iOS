@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "3dc6a42c7727c49bf26508e29b0a0b35f9c7e1ad",
+        "version" : "5.8.1"
+      }
+    },
+    {
+      "identity" : "swift-driver-demo",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kmahar/swift-driver-demo",
+      "state" : {
+        "branch" : "main",
+        "revision" : "70f789cc077e37e85af13091168fd0141466df1f"
+      }
+    }
+  ],
+  "version" : 2
+}
