@@ -1,0 +1,991 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B53969632B10354600828EC7 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969622B10354600828EC7 /* WebService.swift */; };
+		B53969652B10356D00828EC7 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969642B10356D00828EC7 /* Equipment.swift */; };
+		B53969672B10359000828EC7 /* Maintenance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969662B10359000828EC7 /* Maintenance.swift */; };
+		B539696A2B1035CD00828EC7 /* DownloadableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969692B1035CD00828EC7 /* DownloadableImageView.swift */; };
+		B539696C2B1035E700828EC7 /* EquipmentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539696B2B1035E700828EC7 /* EquipmentDetailView.swift */; };
+		B539696E2B1035FE00828EC7 /* EquipmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539696D2B1035FE00828EC7 /* EquipmentsView.swift */; };
+		B53969702B10361D00828EC7 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539696F2B10361D00828EC7 /* ImageLoader.swift */; };
+		B53969722B10363800828EC7 /* MaintenancesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969712B10363800828EC7 /* MaintenancesView.swift */; };
+		B53969742B10365000828EC7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969732B10365000828EC7 /* ImagePicker.swift */; };
+		B53969762B10366B00828EC7 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969752B10366B00828EC7 /* CustomNavigationBar.swift */; };
+		B53969782B10368400828EC7 /* CategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969772B10368400828EC7 /* CategoryButton.swift */; };
+		B539697E2B1036D500828EC7 /* MaintenancesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539697D2B1036D500828EC7 /* MaintenancesViewModel.swift */; };
+		B53969872B1039D200828EC7 /* ProduitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969862B1039D200828EC7 /* ProduitListView.swift */; };
+		B53969892B103A0900828EC7 /* Produit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969882B103A0900828EC7 /* Produit.swift */; };
+		B539698B2B103A2D00828EC7 /* AddProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539698A2B103A2D00828EC7 /* AddProductView.swift */; };
+		B539698D2B103A7800828EC7 /* AddFarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539698C2B103A7800828EC7 /* AddFarmView.swift */; };
+		B539698F2B103A9600828EC7 /* Farm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B539698E2B103A9600828EC7 /* Farm.swift */; };
+		B53969912B103AB100828EC7 /* FarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969902B103AB100828EC7 /* FarmView.swift */; };
+		B53969932B103AC400828EC7 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969922B103AC400828EC7 /* ProductCell.swift */; };
+		B53969952B103AD700828EC7 /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969942B103AD700828EC7 /* ProductCellView.swift */; };
+		B53969972B103B1100828EC7 /* Farms.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969962B103B1100828EC7 /* Farms.swift */; };
+		B53969992B103B9C00828EC7 /* FarmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969982B103B9C00828EC7 /* FarmController.swift */; };
+		B53969A32B10599500828EC7 /* Acceuilview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969A22B10599500828EC7 /* Acceuilview.swift */; };
+		B53969A72B106F4D00828EC7 /* ForgetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969A62B106F4D00828EC7 /* ForgetPassword.swift */; };
+		B53969A92B106F7800828EC7 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969A82B106F7800828EC7 /* ResetPassword.swift */; };
+		B53969AB2B1074DA00828EC7 /* BlogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969AA2B1074DA00828EC7 /* BlogModel.swift */; };
+		B53969AD2B10751800828EC7 /* Botresponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969AC2B10751800828EC7 /* Botresponse.swift */; };
+		B53969AF2B10752F00828EC7 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969AE2B10752F00828EC7 /* CommentModel.swift */; };
+		B53969B12B10754000828EC7 /* ReclamationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969B02B10754000828EC7 /* ReclamationModel.swift */; };
+		B53969B32B10756500828EC7 /* BlogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969B22B10756500828EC7 /* BlogService.swift */; };
+		B53969B52B10758C00828EC7 /* CommentRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969B42B10758C00828EC7 /* CommentRowView.swift */; };
+		B53969B92B1075D300828EC7 /* ContentBlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969B82B1075D300828EC7 /* ContentBlogView.swift */; };
+		B53969BD2B10762900828EC7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969BC2B10762900828EC7 /* HomeView.swift */; };
+		B53969C12B10767F00828EC7 /* ListReclamation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969C02B10767F00828EC7 /* ListReclamation.swift */; };
+		B53969C32B10769300828EC7 /* ReclamationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969C22B10769300828EC7 /* ReclamationView.swift */; };
+		B53969C52B1076A700828EC7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969C42B1076A700828EC7 /* SettingsView.swift */; };
+		B53969C72B1076BA00828EC7 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969C62B1076BA00828EC7 /* SideMenu.swift */; };
+		B53969C92B1076CC00828EC7 /* SideViewContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969C82B1076CC00828EC7 /* SideViewContents.swift */; };
+		B53969CB2B1076E200828EC7 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969CA2B1076E200828EC7 /* TabBarView.swift */; };
+		B53969CD2B1076F200828EC7 /* addBlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969CC2B1076F200828EC7 /* addBlogView.swift */; };
+		B53969CF2B10770300828EC7 /* messagerieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969CE2B10770300828EC7 /* messagerieView.swift */; };
+		B53969D12B10774200828EC7 /* FavoriteBlogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969D02B10774200828EC7 /* FavoriteBlogView.swift */; };
+		B53969D32B10779600828EC7 /* ImageBlogPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53969D22B10779600828EC7 /* ImageBlogPicker.swift */; };
+		B53969D52B10782B00828EC7 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = B53969D42B10782B00828EC7 /* Contents.json */; };
+		C434C6B22B0AACF3003629D7 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C434C6B12B0AACF3003629D7 /* SessionManager.swift */; };
+		C434C6B42B0AAEE1003629D7 /* SigInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C434C6B32B0AAEE1003629D7 /* SigInViewModel.swift */; };
+		C434C6B62B0AD1B1003629D7 /* UserRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C434C6B52B0AD1B1003629D7 /* UserRegistration.swift */; };
+		C44953122B06DBEA00077873 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C44953112B06DBEA00077873 /* Alamofire */; };
+		C45E05952B02C0DF004BB883 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E05942B02C0DF004BB883 /* Settings.swift */; };
+		C45F773A2B03F76800FE0A8F /* EmailModif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F77392B03F76800FE0A8F /* EmailModif.swift */; };
+		C45F773C2B03F81100FE0A8F /* UsernameModif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F773B2B03F81100FE0A8F /* UsernameModif.swift */; };
+		C45F773E2B03F88E00FE0A8F /* PhoneModif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F773D2B03F88E00FE0A8F /* PhoneModif.swift */; };
+		C4A69D072B0F0CCF006E461B /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A69D062B0F0CCF006E461B /* Setting.swift */; };
+		C4A69D092B0F0E01006E461B /* Edit Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A69D082B0F0E01006E461B /* Edit Profile.swift */; };
+		C4CA74342B09784D009423D6 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA74332B09784D009423D6 /* ApiManager.swift */; };
+		C4CA74362B097A4C009423D6 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA74352B097A4C009423D6 /* UserViewModel.swift */; };
+		C4DD6AC92AFD77D300EA4604 /* AgriConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6AC82AFD77D300EA4604 /* AgriConnectApp.swift */; };
+		C4DD6ACB2AFD77D300EA4604 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6ACA2AFD77D300EA4604 /* ContentView.swift */; };
+		C4DD6ACD2AFD77D400EA4604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DD6ACC2AFD77D400EA4604 /* Assets.xcassets */; };
+		C4DD6AD22AFD77D400EA4604 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6AD12AFD77D400EA4604 /* Persistence.swift */; };
+		C4DD6AD52AFD77D400EA4604 /* AgriConnect.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6AD32AFD77D400EA4604 /* AgriConnect.xcdatamodeld */; };
+		C4DD6ADF2AFD77D400EA4604 /* AgriConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6ADE2AFD77D400EA4604 /* AgriConnectTests.swift */; };
+		C4DD6AE92AFD77D400EA4604 /* AgriConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6AE82AFD77D400EA4604 /* AgriConnectUITests.swift */; };
+		C4DD6AEB2AFD77D400EA4604 /* AgriConnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6AEA2AFD77D400EA4604 /* AgriConnectUITestsLaunchTests.swift */; };
+		C4DD6B022AFD794600EA4604 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6B012AFD794600EA4604 /* SignUp.swift */; };
+		C4DD6B0B2AFD7DA300EA4604 /* OTP Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6B0A2AFD7DA300EA4604 /* OTP Verification.swift */; };
+		C4DD6B122AFD7FA100EA4604 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6B112AFD7FA100EA4604 /* FavoriteView.swift */; };
+		C4DD6B162AFD81E300EA4604 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DD6B152AFD81E300EA4604 /* Home.swift */; };
+		C4F5417D2B05644600397AB5 /* SignupF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F5417C2B05644600397AB5 /* SignupF.swift */; };
+		C4F5417F2B05645400397AB5 /* SignInF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F5417E2B05645400397AB5 /* SignInF.swift */; };
+		C4F541822B05648400397AB5 /* ForgetPassF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F541812B05648400397AB5 /* ForgetPassF.swift */; };
+		C4F541862B0564B400397AB5 /* ResetPassF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F541852B0564B400397AB5 /* ResetPassF.swift */; };
+		C4F541882B0564D400397AB5 /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F541872B0564D400397AB5 /* FirstPage.swift */; };
+		C4F5418A2B056BA100397AB5 /* OTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F541892B056BA100397AB5 /* OTP.swift */; };
+		C4F5418F2B056CA900397AB5 /* FarmerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F5418E2B056CA900397AB5 /* FarmerProfile.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4DD6ADB2AFD77D400EA4604 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4DD6ABD2AFD77D300EA4604 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4DD6AC42AFD77D300EA4604;
+			remoteInfo = AgriConnect;
+		};
+		C4DD6AE52AFD77D400EA4604 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4DD6ABD2AFD77D300EA4604 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4DD6AC42AFD77D300EA4604;
+			remoteInfo = AgriConnect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B53969622B10354600828EC7 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		B53969642B10356D00828EC7 /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		B53969662B10359000828EC7 /* Maintenance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maintenance.swift; sourceTree = "<group>"; };
+		B53969692B1035CD00828EC7 /* DownloadableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadableImageView.swift; sourceTree = "<group>"; };
+		B539696B2B1035E700828EC7 /* EquipmentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentDetailView.swift; sourceTree = "<group>"; };
+		B539696D2B1035FE00828EC7 /* EquipmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentsView.swift; sourceTree = "<group>"; };
+		B539696F2B10361D00828EC7 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		B53969712B10363800828EC7 /* MaintenancesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenancesView.swift; sourceTree = "<group>"; };
+		B53969732B10365000828EC7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		B53969752B10366B00828EC7 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		B53969772B10368400828EC7 /* CategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton.swift; sourceTree = "<group>"; };
+		B539697D2B1036D500828EC7 /* MaintenancesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaintenancesViewModel.swift; sourceTree = "<group>"; };
+		B53969862B1039D200828EC7 /* ProduitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProduitListView.swift; sourceTree = "<group>"; };
+		B53969882B103A0900828EC7 /* Produit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Produit.swift; sourceTree = "<group>"; };
+		B539698A2B103A2D00828EC7 /* AddProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductView.swift; sourceTree = "<group>"; };
+		B539698C2B103A7800828EC7 /* AddFarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFarmView.swift; sourceTree = "<group>"; };
+		B539698E2B103A9600828EC7 /* Farm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Farm.swift; sourceTree = "<group>"; };
+		B53969902B103AB100828EC7 /* FarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmView.swift; sourceTree = "<group>"; };
+		B53969922B103AC400828EC7 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		B53969942B103AD700828EC7 /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
+		B53969962B103B1100828EC7 /* Farms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Farms.swift; sourceTree = "<group>"; };
+		B53969982B103B9C00828EC7 /* FarmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmController.swift; sourceTree = "<group>"; };
+		B53969A22B10599500828EC7 /* Acceuilview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acceuilview.swift; sourceTree = "<group>"; };
+		B53969A62B106F4D00828EC7 /* ForgetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassword.swift; sourceTree = "<group>"; };
+		B53969A82B106F7800828EC7 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
+		B53969AA2B1074DA00828EC7 /* BlogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogModel.swift; sourceTree = "<group>"; };
+		B53969AC2B10751800828EC7 /* Botresponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Botresponse.swift; sourceTree = "<group>"; };
+		B53969AE2B10752F00828EC7 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		B53969B02B10754000828EC7 /* ReclamationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReclamationModel.swift; sourceTree = "<group>"; };
+		B53969B22B10756500828EC7 /* BlogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogService.swift; sourceTree = "<group>"; };
+		B53969B42B10758C00828EC7 /* CommentRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRowView.swift; sourceTree = "<group>"; };
+		B53969B82B1075D300828EC7 /* ContentBlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlogView.swift; sourceTree = "<group>"; };
+		B53969BC2B10762900828EC7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B53969C02B10767F00828EC7 /* ListReclamation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReclamation.swift; sourceTree = "<group>"; };
+		B53969C22B10769300828EC7 /* ReclamationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReclamationView.swift; sourceTree = "<group>"; };
+		B53969C42B1076A700828EC7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B53969C62B1076BA00828EC7 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		B53969C82B1076CC00828EC7 /* SideViewContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideViewContents.swift; sourceTree = "<group>"; };
+		B53969CA2B1076E200828EC7 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		B53969CC2B1076F200828EC7 /* addBlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addBlogView.swift; sourceTree = "<group>"; };
+		B53969CE2B10770300828EC7 /* messagerieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messagerieView.swift; sourceTree = "<group>"; };
+		B53969D02B10774200828EC7 /* FavoriteBlogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteBlogView.swift; sourceTree = "<group>"; };
+		B53969D22B10779600828EC7 /* ImageBlogPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBlogPicker.swift; sourceTree = "<group>"; };
+		B53969D42B10782B00828EC7 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C434C6B12B0AACF3003629D7 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		C434C6B32B0AAEE1003629D7 /* SigInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigInViewModel.swift; sourceTree = "<group>"; };
+		C434C6B52B0AD1B1003629D7 /* UserRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistration.swift; sourceTree = "<group>"; };
+		C45E05942B02C0DF004BB883 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		C45F77392B03F76800FE0A8F /* EmailModif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailModif.swift; sourceTree = "<group>"; };
+		C45F773B2B03F81100FE0A8F /* UsernameModif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameModif.swift; sourceTree = "<group>"; };
+		C45F773D2B03F88E00FE0A8F /* PhoneModif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneModif.swift; sourceTree = "<group>"; };
+		C4A69D062B0F0CCF006E461B /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		C4A69D082B0F0E01006E461B /* Edit Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Edit Profile.swift"; sourceTree = "<group>"; };
+		C4CA74332B09784D009423D6 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		C4CA74352B097A4C009423D6 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		C4DD6AC52AFD77D300EA4604 /* AgriConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgriConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DD6AC82AFD77D300EA4604 /* AgriConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgriConnectApp.swift; sourceTree = "<group>"; };
+		C4DD6ACA2AFD77D300EA4604 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C4DD6ACC2AFD77D400EA4604 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4DD6AD12AFD77D400EA4604 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		C4DD6AD42AFD77D400EA4604 /* AgriConnect.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AgriConnect.xcdatamodel; sourceTree = "<group>"; };
+		C4DD6ADA2AFD77D400EA4604 /* AgriConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgriConnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DD6ADE2AFD77D400EA4604 /* AgriConnectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgriConnectTests.swift; sourceTree = "<group>"; };
+		C4DD6AE42AFD77D400EA4604 /* AgriConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgriConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DD6AE82AFD77D400EA4604 /* AgriConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgriConnectUITests.swift; sourceTree = "<group>"; };
+		C4DD6AEA2AFD77D400EA4604 /* AgriConnectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgriConnectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C4DD6B012AFD794600EA4604 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		C4DD6B0A2AFD7DA300EA4604 /* OTP Verification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OTP Verification.swift"; sourceTree = "<group>"; };
+		C4DD6B112AFD7FA100EA4604 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		C4DD6B152AFD81E300EA4604 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C4F5417C2B05644600397AB5 /* SignupF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupF.swift; sourceTree = "<group>"; };
+		C4F5417E2B05645400397AB5 /* SignInF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInF.swift; sourceTree = "<group>"; };
+		C4F541812B05648400397AB5 /* ForgetPassF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassF.swift; sourceTree = "<group>"; };
+		C4F541852B0564B400397AB5 /* ResetPassF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassF.swift; sourceTree = "<group>"; };
+		C4F541872B0564D400397AB5 /* FirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
+		C4F541892B056BA100397AB5 /* OTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTP.swift; sourceTree = "<group>"; };
+		C4F5418E2B056CA900397AB5 /* FarmerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmerProfile.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4DD6AC22AFD77D300EA4604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C44953122B06DBEA00077873 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DD6AD72AFD77D400EA4604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DD6AE12AFD77D400EA4604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B53969682B1035A500828EC7 /* EquipmentView */ = {
+			isa = PBXGroup;
+			children = (
+				B53969692B1035CD00828EC7 /* DownloadableImageView.swift */,
+				B539696B2B1035E700828EC7 /* EquipmentDetailView.swift */,
+				B539696D2B1035FE00828EC7 /* EquipmentsView.swift */,
+				B539696F2B10361D00828EC7 /* ImageLoader.swift */,
+				B53969712B10363800828EC7 /* MaintenancesView.swift */,
+				B53969732B10365000828EC7 /* ImagePicker.swift */,
+				B53969752B10366B00828EC7 /* CustomNavigationBar.swift */,
+				B53969772B10368400828EC7 /* CategoryButton.swift */,
+				B539697D2B1036D500828EC7 /* MaintenancesViewModel.swift */,
+			);
+			path = EquipmentView;
+			sourceTree = "<group>";
+		};
+		B53969832B10399800828EC7 /* produitView */ = {
+			isa = PBXGroup;
+			children = (
+				B53969862B1039D200828EC7 /* ProduitListView.swift */,
+				B539698A2B103A2D00828EC7 /* AddProductView.swift */,
+				B539698C2B103A7800828EC7 /* AddFarmView.swift */,
+				B539698E2B103A9600828EC7 /* Farm.swift */,
+				B53969902B103AB100828EC7 /* FarmView.swift */,
+				B53969922B103AC400828EC7 /* ProductCell.swift */,
+				B53969942B103AD700828EC7 /* ProductCellView.swift */,
+				B53969982B103B9C00828EC7 /* FarmController.swift */,
+				B53969A22B10599500828EC7 /* Acceuilview.swift */,
+			);
+			path = produitView;
+			sourceTree = "<group>";
+		};
+		B53969A52B105F3000828EC7 /* blogView */ = {
+			isa = PBXGroup;
+			children = (
+				B53969B42B10758C00828EC7 /* CommentRowView.swift */,
+				B53969C02B10767F00828EC7 /* ListReclamation.swift */,
+				B53969B82B1075D300828EC7 /* ContentBlogView.swift */,
+				B53969BC2B10762900828EC7 /* HomeView.swift */,
+				B53969C22B10769300828EC7 /* ReclamationView.swift */,
+				B53969C42B1076A700828EC7 /* SettingsView.swift */,
+				B53969C62B1076BA00828EC7 /* SideMenu.swift */,
+				B53969C82B1076CC00828EC7 /* SideViewContents.swift */,
+				B53969CA2B1076E200828EC7 /* TabBarView.swift */,
+				B53969CC2B1076F200828EC7 /* addBlogView.swift */,
+				B53969CE2B10770300828EC7 /* messagerieView.swift */,
+				B53969D02B10774200828EC7 /* FavoriteBlogView.swift */,
+				B53969D22B10779600828EC7 /* ImageBlogPicker.swift */,
+			);
+			path = blogView;
+			sourceTree = "<group>";
+		};
+		C432D9522B06E12B00C51A06 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C434C6B52B0AD1B1003629D7 /* UserRegistration.swift */,
+				B53969642B10356D00828EC7 /* Equipment.swift */,
+				B53969662B10359000828EC7 /* Maintenance.swift */,
+				B53969882B103A0900828EC7 /* Produit.swift */,
+				B53969962B103B1100828EC7 /* Farms.swift */,
+				B53969AA2B1074DA00828EC7 /* BlogModel.swift */,
+				B53969AC2B10751800828EC7 /* Botresponse.swift */,
+				B53969AE2B10752F00828EC7 /* CommentModel.swift */,
+				B53969B02B10754000828EC7 /* ReclamationModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C432D9552B06E37000C51A06 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C4CA74352B097A4C009423D6 /* UserViewModel.swift */,
+				C434C6B32B0AAEE1003629D7 /* SigInViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C432D9582B070F0E00C51A06 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C4CA74332B09784D009423D6 /* ApiManager.swift */,
+				C434C6B12B0AACF3003629D7 /* SessionManager.swift */,
+				B53969622B10354600828EC7 /* WebService.swift */,
+				B53969B22B10756500828EC7 /* BlogService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C4DD6ABC2AFD77D300EA4604 = {
+			isa = PBXGroup;
+			children = (
+				C4DD6AC82AFD77D300EA4604 /* AgriConnectApp.swift */,
+				C4DD6ACC2AFD77D400EA4604 /* Assets.xcassets */,
+				C4DD6AD12AFD77D400EA4604 /* Persistence.swift */,
+				C4DD6AC72AFD77D300EA4604 /* AgriConnect */,
+				C4DD6ADD2AFD77D400EA4604 /* AgriConnectTests */,
+				C4DD6AE72AFD77D400EA4604 /* AgriConnectUITests */,
+				C4DD6AC62AFD77D300EA4604 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4DD6AC62AFD77D300EA4604 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4DD6AC52AFD77D300EA4604 /* AgriConnect.app */,
+				C4DD6ADA2AFD77D400EA4604 /* AgriConnectTests.xctest */,
+				C4DD6AE42AFD77D400EA4604 /* AgriConnectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4DD6AC72AFD77D300EA4604 /* AgriConnect */ = {
+			isa = PBXGroup;
+			children = (
+				C432D9582B070F0E00C51A06 /* Services */,
+				C432D9552B06E37000C51A06 /* ViewModels */,
+				C432D9522B06E12B00C51A06 /* Models */,
+				C4DD6AF72AFD77F700EA4604 /* Views */,
+				C4DD6AD32AFD77D400EA4604 /* AgriConnect.xcdatamodeld */,
+				C4DD6ACE2AFD77D400EA4604 /* Preview Content */,
+			);
+			path = AgriConnect;
+			sourceTree = "<group>";
+		};
+		C4DD6ACE2AFD77D400EA4604 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B53969D42B10782B00828EC7 /* Contents.json */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4DD6ADD2AFD77D400EA4604 /* AgriConnectTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4DD6ADE2AFD77D400EA4604 /* AgriConnectTests.swift */,
+			);
+			path = AgriConnectTests;
+			sourceTree = "<group>";
+		};
+		C4DD6AE72AFD77D400EA4604 /* AgriConnectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4DD6AE82AFD77D400EA4604 /* AgriConnectUITests.swift */,
+				C4DD6AEA2AFD77D400EA4604 /* AgriConnectUITestsLaunchTests.swift */,
+			);
+			path = AgriConnectUITests;
+			sourceTree = "<group>";
+		};
+		C4DD6AF72AFD77F700EA4604 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B53969A52B105F3000828EC7 /* blogView */,
+				B53969832B10399800828EC7 /* produitView */,
+				B53969682B1035A500828EC7 /* EquipmentView */,
+				C4F5418B2B056BD600397AB5 /* HomeFarmer */,
+				C4F5417B2B05642100397AB5 /* FarmerAuth */,
+				C4DD6B102AFD7F6B00EA4604 /* NavBar */,
+				C4DD6B072AFD79B000EA4604 /* Home */,
+				C4DD6AFE2AFD790B00EA4604 /* Auth */,
+				C4F541872B0564D400397AB5 /* FirstPage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4DD6AFE2AFD790B00EA4604 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C4DD6ACA2AFD77D300EA4604 /* ContentView.swift */,
+				C4DD6B012AFD794600EA4604 /* SignUp.swift */,
+				C4DD6B0A2AFD7DA300EA4604 /* OTP Verification.swift */,
+				B53969A62B106F4D00828EC7 /* ForgetPassword.swift */,
+				B53969A82B106F7800828EC7 /* ResetPassword.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C4DD6B072AFD79B000EA4604 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C4DD6B152AFD81E300EA4604 /* Home.swift */,
+				C45E05942B02C0DF004BB883 /* Settings.swift */,
+				C45F77392B03F76800FE0A8F /* EmailModif.swift */,
+				C45F773B2B03F81100FE0A8F /* UsernameModif.swift */,
+				C45F773D2B03F88E00FE0A8F /* PhoneModif.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C4DD6B102AFD7F6B00EA4604 /* NavBar */ = {
+			isa = PBXGroup;
+			children = (
+				C4DD6B112AFD7FA100EA4604 /* FavoriteView.swift */,
+			);
+			path = NavBar;
+			sourceTree = "<group>";
+		};
+		C4F5417B2B05642100397AB5 /* FarmerAuth */ = {
+			isa = PBXGroup;
+			children = (
+				C4F5417E2B05645400397AB5 /* SignInF.swift */,
+				C4F5417C2B05644600397AB5 /* SignupF.swift */,
+				C4F541812B05648400397AB5 /* ForgetPassF.swift */,
+				C4F541852B0564B400397AB5 /* ResetPassF.swift */,
+				C4F541892B056BA100397AB5 /* OTP.swift */,
+			);
+			path = FarmerAuth;
+			sourceTree = "<group>";
+		};
+		C4F5418B2B056BD600397AB5 /* HomeFarmer */ = {
+			isa = PBXGroup;
+			children = (
+				C4F5418E2B056CA900397AB5 /* FarmerProfile.swift */,
+				C4A69D062B0F0CCF006E461B /* Setting.swift */,
+				C4A69D082B0F0E01006E461B /* Edit Profile.swift */,
+			);
+			path = HomeFarmer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4DD6AC42AFD77D300EA4604 /* AgriConnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4DD6AEE2AFD77D400EA4604 /* Build configuration list for PBXNativeTarget "AgriConnect" */;
+			buildPhases = (
+				C4DD6AC12AFD77D300EA4604 /* Sources */,
+				C4DD6AC22AFD77D300EA4604 /* Frameworks */,
+				C4DD6AC32AFD77D300EA4604 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgriConnect;
+			packageProductDependencies = (
+				C44953112B06DBEA00077873 /* Alamofire */,
+			);
+			productName = AgriConnect;
+			productReference = C4DD6AC52AFD77D300EA4604 /* AgriConnect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4DD6AD92AFD77D400EA4604 /* AgriConnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4DD6AF12AFD77D400EA4604 /* Build configuration list for PBXNativeTarget "AgriConnectTests" */;
+			buildPhases = (
+				C4DD6AD62AFD77D400EA4604 /* Sources */,
+				C4DD6AD72AFD77D400EA4604 /* Frameworks */,
+				C4DD6AD82AFD77D400EA4604 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4DD6ADC2AFD77D400EA4604 /* PBXTargetDependency */,
+			);
+			name = AgriConnectTests;
+			productName = AgriConnectTests;
+			productReference = C4DD6ADA2AFD77D400EA4604 /* AgriConnectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4DD6AE32AFD77D400EA4604 /* AgriConnectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4DD6AF42AFD77D400EA4604 /* Build configuration list for PBXNativeTarget "AgriConnectUITests" */;
+			buildPhases = (
+				C4DD6AE02AFD77D400EA4604 /* Sources */,
+				C4DD6AE12AFD77D400EA4604 /* Frameworks */,
+				C4DD6AE22AFD77D400EA4604 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4DD6AE62AFD77D400EA4604 /* PBXTargetDependency */,
+			);
+			name = AgriConnectUITests;
+			productName = AgriConnectUITests;
+			productReference = C4DD6AE42AFD77D400EA4604 /* AgriConnectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4DD6ABD2AFD77D300EA4604 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					C4DD6AC42AFD77D300EA4604 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					C4DD6AD92AFD77D400EA4604 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = C4DD6AC42AFD77D300EA4604;
+					};
+					C4DD6AE32AFD77D400EA4604 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = C4DD6AC42AFD77D300EA4604;
+					};
+				};
+			};
+			buildConfigurationList = C4DD6AC02AFD77D300EA4604 /* Build configuration list for PBXProject "AgriConnect" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4DD6ABC2AFD77D300EA4604;
+			packageReferences = (
+				C44953102B06DBEA00077873 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = C4DD6AC62AFD77D300EA4604 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4DD6AC42AFD77D300EA4604 /* AgriConnect */,
+				C4DD6AD92AFD77D400EA4604 /* AgriConnectTests */,
+				C4DD6AE32AFD77D400EA4604 /* AgriConnectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4DD6AC32AFD77D300EA4604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DD6ACD2AFD77D400EA4604 /* Assets.xcassets in Resources */,
+				B53969D52B10782B00828EC7 /* Contents.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DD6AD82AFD77D400EA4604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DD6AE22AFD77D400EA4604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4DD6AC12AFD77D300EA4604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B539698B2B103A2D00828EC7 /* AddProductView.swift in Sources */,
+				B539696A2B1035CD00828EC7 /* DownloadableImageView.swift in Sources */,
+				C4A69D092B0F0E01006E461B /* Edit Profile.swift in Sources */,
+				B53969C72B1076BA00828EC7 /* SideMenu.swift in Sources */,
+				B53969D12B10774200828EC7 /* FavoriteBlogView.swift in Sources */,
+				B53969CD2B1076F200828EC7 /* addBlogView.swift in Sources */,
+				B53969672B10359000828EC7 /* Maintenance.swift in Sources */,
+				C4F5418F2B056CA900397AB5 /* FarmerProfile.swift in Sources */,
+				B539697E2B1036D500828EC7 /* MaintenancesViewModel.swift in Sources */,
+				C4CA74362B097A4C009423D6 /* UserViewModel.swift in Sources */,
+				C4DD6B022AFD794600EA4604 /* SignUp.swift in Sources */,
+				B53969992B103B9C00828EC7 /* FarmController.swift in Sources */,
+				B53969782B10368400828EC7 /* CategoryButton.swift in Sources */,
+				B53969952B103AD700828EC7 /* ProductCellView.swift in Sources */,
+				B53969A72B106F4D00828EC7 /* ForgetPassword.swift in Sources */,
+				C434C6B22B0AACF3003629D7 /* SessionManager.swift in Sources */,
+				B53969702B10361D00828EC7 /* ImageLoader.swift in Sources */,
+				B53969742B10365000828EC7 /* ImagePicker.swift in Sources */,
+				B53969C92B1076CC00828EC7 /* SideViewContents.swift in Sources */,
+				C4DD6B0B2AFD7DA300EA4604 /* OTP Verification.swift in Sources */,
+				C434C6B62B0AD1B1003629D7 /* UserRegistration.swift in Sources */,
+				B53969722B10363800828EC7 /* MaintenancesView.swift in Sources */,
+				C4DD6B162AFD81E300EA4604 /* Home.swift in Sources */,
+				B53969AB2B1074DA00828EC7 /* BlogModel.swift in Sources */,
+				B53969C52B1076A700828EC7 /* SettingsView.swift in Sources */,
+				C4F5417D2B05644600397AB5 /* SignupF.swift in Sources */,
+				C4DD6AD22AFD77D400EA4604 /* Persistence.swift in Sources */,
+				B53969C12B10767F00828EC7 /* ListReclamation.swift in Sources */,
+				C45F773E2B03F88E00FE0A8F /* PhoneModif.swift in Sources */,
+				B53969912B103AB100828EC7 /* FarmView.swift in Sources */,
+				C4F5417F2B05645400397AB5 /* SignInF.swift in Sources */,
+				C4DD6AD52AFD77D400EA4604 /* AgriConnect.xcdatamodeld in Sources */,
+				B53969B12B10754000828EC7 /* ReclamationModel.swift in Sources */,
+				C434C6B42B0AAEE1003629D7 /* SigInViewModel.swift in Sources */,
+				B53969652B10356D00828EC7 /* Equipment.swift in Sources */,
+				B53969CF2B10770300828EC7 /* messagerieView.swift in Sources */,
+				B53969CB2B1076E200828EC7 /* TabBarView.swift in Sources */,
+				B539698D2B103A7800828EC7 /* AddFarmView.swift in Sources */,
+				B539696E2B1035FE00828EC7 /* EquipmentsView.swift in Sources */,
+				B539698F2B103A9600828EC7 /* Farm.swift in Sources */,
+				B53969BD2B10762900828EC7 /* HomeView.swift in Sources */,
+				C45E05952B02C0DF004BB883 /* Settings.swift in Sources */,
+				B53969B32B10756500828EC7 /* BlogService.swift in Sources */,
+				C4F541822B05648400397AB5 /* ForgetPassF.swift in Sources */,
+				B53969C32B10769300828EC7 /* ReclamationView.swift in Sources */,
+				C4F541882B0564D400397AB5 /* FirstPage.swift in Sources */,
+				B53969892B103A0900828EC7 /* Produit.swift in Sources */,
+				C4A69D072B0F0CCF006E461B /* Setting.swift in Sources */,
+				C4F541862B0564B400397AB5 /* ResetPassF.swift in Sources */,
+				B53969B52B10758C00828EC7 /* CommentRowView.swift in Sources */,
+				B53969B92B1075D300828EC7 /* ContentBlogView.swift in Sources */,
+				B53969A92B106F7800828EC7 /* ResetPassword.swift in Sources */,
+				B53969A32B10599500828EC7 /* Acceuilview.swift in Sources */,
+				B53969932B103AC400828EC7 /* ProductCell.swift in Sources */,
+				B53969972B103B1100828EC7 /* Farms.swift in Sources */,
+				C4DD6ACB2AFD77D300EA4604 /* ContentView.swift in Sources */,
+				C4DD6AC92AFD77D300EA4604 /* AgriConnectApp.swift in Sources */,
+				B53969AF2B10752F00828EC7 /* CommentModel.swift in Sources */,
+				B53969D32B10779600828EC7 /* ImageBlogPicker.swift in Sources */,
+				B53969872B1039D200828EC7 /* ProduitListView.swift in Sources */,
+				C4DD6B122AFD7FA100EA4604 /* FavoriteView.swift in Sources */,
+				B53969632B10354600828EC7 /* WebService.swift in Sources */,
+				C45F773C2B03F81100FE0A8F /* UsernameModif.swift in Sources */,
+				C45F773A2B03F76800FE0A8F /* EmailModif.swift in Sources */,
+				C4CA74342B09784D009423D6 /* ApiManager.swift in Sources */,
+				B53969AD2B10751800828EC7 /* Botresponse.swift in Sources */,
+				B53969762B10366B00828EC7 /* CustomNavigationBar.swift in Sources */,
+				B539696C2B1035E700828EC7 /* EquipmentDetailView.swift in Sources */,
+				C4F5418A2B056BA100397AB5 /* OTP.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DD6AD62AFD77D400EA4604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DD6ADF2AFD77D400EA4604 /* AgriConnectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DD6AE02AFD77D400EA4604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DD6AEB2AFD77D400EA4604 /* AgriConnectUITestsLaunchTests.swift in Sources */,
+				C4DD6AE92AFD77D400EA4604 /* AgriConnectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4DD6ADC2AFD77D400EA4604 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4DD6AC42AFD77D300EA4604 /* AgriConnect */;
+			targetProxy = C4DD6ADB2AFD77D400EA4604 /* PBXContainerItemProxy */;
+		};
+		C4DD6AE62AFD77D400EA4604 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4DD6AC42AFD77D300EA4604 /* AgriConnect */;
+			targetProxy = C4DD6AE52AFD77D400EA4604 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C4DD6AEC2AFD77D400EA4604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4DD6AED2AFD77D400EA4604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4DD6AEF2AFD77D400EA4604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AgriConnect/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tn.esprit.agriconnect-user.AgriConnect";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4DD6AF02AFD77D400EA4604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AgriConnect/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tn.esprit.agriconnect-user.AgriConnect";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C4DD6AF22AFD77D400EA4604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tn.esprit.agriconnect-user.AgriConnectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgriConnect.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AgriConnect";
+			};
+			name = Debug;
+		};
+		C4DD6AF32AFD77D400EA4604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tn.esprit.agriconnect-user.AgriConnectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgriConnect.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AgriConnect";
+			};
+			name = Release;
+		};
+		C4DD6AF52AFD77D400EA4604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tn.esprit.agriconnect-user.AgriConnectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AgriConnect;
+			};
+			name = Debug;
+		};
+		C4DD6AF62AFD77D400EA4604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "tn.esprit.agriconnect-user.AgriConnectUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AgriConnect;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4DD6AC02AFD77D300EA4604 /* Build configuration list for PBXProject "AgriConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DD6AEC2AFD77D400EA4604 /* Debug */,
+				C4DD6AED2AFD77D400EA4604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4DD6AEE2AFD77D400EA4604 /* Build configuration list for PBXNativeTarget "AgriConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DD6AEF2AFD77D400EA4604 /* Debug */,
+				C4DD6AF02AFD77D400EA4604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4DD6AF12AFD77D400EA4604 /* Build configuration list for PBXNativeTarget "AgriConnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DD6AF22AFD77D400EA4604 /* Debug */,
+				C4DD6AF32AFD77D400EA4604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4DD6AF42AFD77D400EA4604 /* Build configuration list for PBXNativeTarget "AgriConnectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DD6AF52AFD77D400EA4604 /* Debug */,
+				C4DD6AF62AFD77D400EA4604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C44953102B06DBEA00077873 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C44953112B06DBEA00077873 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C44953102B06DBEA00077873 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		C4DD6AD32AFD77D400EA4604 /* AgriConnect.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4DD6AD42AFD77D400EA4604 /* AgriConnect.xcdatamodel */,
+			);
+			currentVersion = C4DD6AD42AFD77D400EA4604 /* AgriConnect.xcdatamodel */;
+			path = AgriConnect.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C4DD6ABD2AFD77D300EA4604 /* Project object */;
+}
